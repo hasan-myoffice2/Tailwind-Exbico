@@ -30,11 +30,11 @@
             <div class="container mx-auto contact-nav flex items-center lg:gap-6 gap-2 justify-center flex-wrap">
                 <div class="contact-menu flex gap-4">
                     <span class="text-iconColor"><i class="fa-solid fa-phone"></i></span>
-                    <p class="text-peraColor font-medium text-pera-fs">Phone: +0123456789</p>
+                    <p class="text-peraColor font-medium text-pera-fs">Phone: +01784400984</p>
                 </div>
                 <div class="contact-menu flex gap-4">
                     <span class="text-iconColor"><i class="fa-solid fa-envelope"></i></span>
-                    <p class="text-peraColor font-medium text-pera-fs">Email: info@example.com</p>
+                    <p class="text-peraColor font-medium text-pera-fs">Email: momrasemahmud.com</p>
                 </div>
                 <div class="contact-menu flex gap-4">
                     <span class="text-iconColor"><i class="fa-solid fa-location-dot"></i></span>
@@ -72,6 +72,222 @@
         </div>
     </nav>
     <!-- Navbar End -->
+
+    <!-- Hero Section -->
+    <section class="font-InterFont">
+        <!-- Swiper -->
+        <div class="swiper heroSwiper">
+            <div class="swiper-wrapper">
+
+                <!-- Slide 1 -->
+                <div class="swiper-slide relative h-screen">
+
+                    <!-- Background Image -->
+                    <img src="./images/hero-one.png" class="absolute w-full h-full object-cover" alt="">
+
+                    <!-- Content -->
+                    <div class="relative z-10 lg:py-40 py-30 container mx-auto h-full flex items-center">
+
+                        <div class="text-white px-4 text-left">
+
+                            <h1 class="text-2xl lg:text-secondaryFont text-headerFs font-bold mb-5 leading-tight">
+                                Professional Web Design & <br> Development Agency.
+                            </h1>
+
+                            <p class="text-peraFs max-w-2xl mb-8 leading-6 font-semibold text-peraColor">
+                                We design modern websites and mobile applications to help <br> businesses grow and
+                                succeed online
+                                globally.
+                            </p>
+
+                            <div class="flex items-center gap-8">
+                                <button
+                                    class="mt-5 bg-buttonColor hover:bg-transparent font-semibold hover:text-buttonColor border-transparent transition border hover:border-buttonColor py-3 px-6 rounded">View
+                                    Portfolio</button>
+                                <span
+                                    class="text-buttonColor mt-5 hover:text-white transition-all duration-300 play-animation hover:bg-buttonColor items-center w-[50px] h-[50px] flex justify-center rounded-full bg-white shadow"><i
+                                        class="fa-solid fa-play"></i></span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- Slide 2 -->
+                <div class="swiper-slide relative h-screen">
+
+                    <!-- Background Image -->
+                    <img src="./images/hero-two.png" class="absolute w-full h-full object-cover" alt="">
+
+                    <!-- Content -->
+                    <div class="relative z-10 lg:py-40 py-30 container mx-auto h-full flex items-center">
+
+                        <div class="text-white px-4 text-left">
+
+                            <h1 class="text-2xl lg:text-secondaryFont text-headerFs font-bold mb-5 leading-tight">
+                                Professional Web Design & <br> Development Agency.
+                            </h1>
+
+                            <p class="text-peraFs max-w-2xl mb-8 leading-6 font-semibold text-peraColor">
+                                We design modern websites and mobile applications to help <br> businesses grow and
+                                succeed online
+                                globally.
+                            </p>
+
+                            <div class="flex items-center gap-8">
+                                <button
+                                    class="mt-5 bg-buttonColor hover:bg-transparent font-semibold hover:text-buttonColor border-transparent transition border hover:border-buttonColor py-3 px-6 rounded">View
+                                    Portfolio</button>
+                                <span
+                                    class="text-buttonColor mt-5 hover:text-white transition-all duration-300 play-animation hover:bg-buttonColor items-center w-[50px] h-[50px] flex justify-center rounded-full bg-white shadow"><i
+                                        class="fa-solid fa-play"></i></span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- Slide 3 -->
+                <div class="swiper-slide relative h-screen">
+
+                    <!-- Background Image -->
+                    <img src="./images/picture.png" class="absolute w-full h-full object-cover" alt="">
+
+                    <!-- Content -->
+                    <div class="relative z-10 lg:py-40 py-30 container mx-auto h-full flex items-center">
+
+                        <div class="text-white px-4 text-left">
+
+                            <h1 class="text-2xl lg:text-secondaryFont text-headerFs font-bold mb-5 leading-tight">
+                                Professional Web Design & <br> Development Agency.
+                            </h1>
+
+                            <p class="text-peraFs max-w-2xl mb-8 leading-6 font-semibold text-peraColor">
+                                We design modern websites and mobile applications to help <br> businesses grow and
+                                succeed online
+                                globally.
+                            </p>
+
+                            <div class="flex items-center gap-8">
+                                <button
+                                    class="mt-5 bg-buttonColor hover:bg-transparent font-semibold hover:text-buttonColor border-transparent transition border hover:border-buttonColor py-3 px-6 rounded">View
+                                    Portfolio</button>
+                                <span
+                                    class="text-buttonColor mt-5 hover:text-white transition-all duration-300 play-animation hover:bg-buttonColor items-center w-[50px] h-[50px] flex justify-center rounded-full bg-white shadow"><i
+                                        class="fa-solid fa-play"></i></span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Pagination -->
+            <div class="swiper-pagination"></div>
+
+        </div>
+    </section>
+    <!-- Hero End -->
+
+    <!-- Script -->
+    <!-- Swiper.js Link -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".blogSwiper", {
+            loop: true,
+            spaceBetween: 30,
+
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+
+            breakpoints: {
+                0: {
+                    slidesPerView: 1,
+                },
+
+                640: {
+                    slidesPerView: 2,
+                },
+
+                1024: {
+                    slidesPerView: 3,
+                },
+            },
+        });
+    </script>
+
+    <!-- logo link script -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            loop: true,
+            spaceBetween: 30,
+
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+
+            breakpoints: {
+                0: {
+                    slidesPerView: 1,
+                },
+
+                640: {
+                    slidesPerView: 2,
+                },
+
+                768: {
+                    slidesPerView: 3,
+                },
+
+                1024: {
+                    slidesPerView: 4,
+                },
+            },
+        });
+    </script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".heroSwiper", {
+            loop: true,
+
+            // autoplay: {
+            //     delay: 3000,
+            //     disableOnInteraction: false,
+            // },
+
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
+    <!-- Script -->
+
 </body>
 
 </html>
