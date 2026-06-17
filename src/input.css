@@ -1,8 +1,30 @@
 @import "tailwindcss";
 
 @theme {
-  --color-primary: #2354ea;
-  --color-secondary: #0f172a;
-  --color-accent: #f59e0b;
-  --text-primary-Fs: 40px;
+  --text-pera-fs: 16px;
+  --text-primaryFont: 26px;
+  --text-secondaryFont: 50px;
+  --color-peraColor: #262626;
+  --color-clifford2: #dd2299;
+  --color-headerFs: #222222;
+  --color-buttonColor: #16a9eb;
+  --color-iconColor: #16a9eb;
+  --color-hoverColor: #16a9eb;
+  --clifford2: #5a5a5a;
+  --clifford3: #5a5a5a;
+  --clifford: #5a5a5a;
+  --font-InterFont: "Inter", sans-serif;
+}
+
+.play-animation {
+  animation: animate 2s infinite;
+}
+
+@keyframes animate {
+  0% {
+    box-shadow: 0 0 0 0 #16a9eb;
+  }
+  100% {
+    box-shadow: 0 0 0 20px #16a8eb9c;
+  }
 }
