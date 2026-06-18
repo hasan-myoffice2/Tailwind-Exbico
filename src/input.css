@@ -15,6 +15,8 @@
   --color-secondary: #6b6b6b;
   --color-whiteColor: #ffffff;
   --font-InterFont: "Inter", sans-serif;
+  /* Footer */
+  --color-FooterBg: #1e2939;
 }
 
 .play-animation {
