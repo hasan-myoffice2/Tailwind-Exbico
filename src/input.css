@@ -23,6 +23,16 @@
   animation: animate 2s infinite;
 }
 
+.active::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 60%;
+  height: 2px;
+  background-color: var(--color-primaryColor);
+}
+
 @keyframes animate {
   0% {
     box-shadow: 0 0 0 0 #16a9eb;
