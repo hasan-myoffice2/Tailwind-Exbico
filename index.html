@@ -7,6 +7,7 @@
     <title>Document</title>
     <!-- Font CDN Link -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <!-- Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
         integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
@@ -452,6 +453,328 @@
     </section>
     <!-- Service End -->
 
+    <!-- Our Portfolio -->
+    <section class="bg-[#F7F7F7] py-20 p-4">
+        <div class="container mx-auto">
+
+            <div class="service-title text-center p-4">
+                <h3 class="bg-primaryColor px-10 py-2 inline-block skew-x-[-25deg]">
+                    <span class="block text-[15px] text-white font-semibold skew-x-25">
+                        Works
+                    </span>
+                </h3>
+                <h2 class="lg:text-[30px] text-[20px] mt-5 text-headerFs font-semibold">OUR PORTFOLIOS</h2>
+                <p class="text-pera-fs mt-5 mb-5 text-secondary">All the lorem Ipsum generators on the Internet tend to
+                    repeat predefined chunks as <br class="hidden lg:block"> necessary, making this the first true
+                    generator on
+                    the Internet.</p>
+            </div>
+
+            <!-- Tabs -->
+            <div class="flex flex-wrap justify-center gap-3 mb-15">
+                <button class="tab-btn bg-[#16A9EB] text-white px-6 py-3 rounded-lg font-semibold" data-tab="all">
+                    All
+                </button>
+
+                <button
+                    class="tab-btn bg-white text-gray-700 px-6 py-3 rounded-lg font-semibold hover:bg-[#16A9EB] hover:text-white transition"
+                    data-tab="web">
+                    Web Design
+                </button>
+
+                <button
+                    class="tab-btn bg-white text-gray-700 px-6 py-3 rounded-lg font-semibold hover:bg-[#16A9EB] hover:text-white transition"
+                    data-tab="ui">
+                    UI/UX
+                </button>
+
+                <button
+                    class="tab-btn bg-white text-gray-700 px-6 py-3 rounded-lg font-semibold hover:bg-[#16A9EB] hover:text-white transition"
+                    data-tab="app">
+                    App Design
+                </button>
+            </div>
+
+            <!-- Content -->
+            <div id="tab-content">
+
+                <!-- All -->
+                <div class="tab-pane grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6" id="all">
+                    <div class="bg-white h-120 shadow relative overflow-hidden group">
+                        <img class="w-full h-full object-cover" src="./images/work-1 (1).webp" alt="tab-image">
+                        <div
+                            class="top-shadow duration-300 ease-in-out transition-all  p-4 w-full h-[50%] bg-[#13121291] absolute top-0 right-full group-hover:right-0">
+                            <h3 class="text-end text-2xl font-bold text-white">Art & Studio</h3>
+                            <p class="text-end text-white mt-2">UI/UX, Branding</p>
+                        </div>
+                        <div
+                            class="botton-shadow duration-300 ease-in-out transition-all  p-4 w-full h-[50%] bg-[#13121291] absolute bottom-0 left-full group-hover:left-0">
+                            <div class="">
+                                <div
+                                    class="w-15 h-15 absolute bottom-6  bg-[#28B463] rounded-full flex items-center justify-center">
+                                    <i class="bi bi-image text-2xl text-white"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-white h-120 shadow relative overflow-hidden group">
+                        <img class="w-full h-full object-cover" src="./images/work-2.webp" alt="tab-image">
+                        <div
+                            class="top-shadow duration-300 ease-in-out transition-all  p-4 w-full h-[50%] bg-[#13121291] absolute top-0 right-full group-hover:right-0">
+                            <h3 class="text-end text-2xl font-bold text-white">Art & Studio</h3>
+                            <p class="text-end text-white mt-2">UI/UX, Branding</p>
+                        </div>
+                        <div
+                            class="botton-shadow duration-300 ease-in-out transition-all  p-4 w-full h-[50%] bg-[#13121291] absolute bottom-0 left-full group-hover:left-0">
+                            <div class="">
+                                <div
+                                    class="w-15 h-15 absolute bottom-6  bg-[#28B463] rounded-full flex items-center justify-center">
+                                    <i class="bi bi-image text-2xl text-white"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-white h-120 shadow relative overflow-hidden group">
+                        <img class="w-full h-full object-cover" src="./images/work-3.webp" alt="tab-image">
+                        <div
+                            class="top-shadow duration-300 ease-in-out transition-all  p-4 w-full h-[50%] bg-[#13121291] absolute top-0 right-full group-hover:right-0">
+                            <h3 class="text-end text-2xl font-bold text-white">Art & Studio</h3>
+                            <p class="text-end text-white mt-2">UI/UX, Branding</p>
+                        </div>
+                        <div
+                            class="botton-shadow duration-300 ease-in-out transition-all  p-4 w-full h-[50%] bg-[#13121291] absolute bottom-0 left-full group-hover:left-0">
+                            <div class="">
+                                <div
+                                    class="w-15 h-15 absolute bottom-6  bg-[#28B463] rounded-full flex items-center justify-center">
+                                    <i class="bi bi-image text-2xl text-white"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-white h-120 shadow relative overflow-hidden group">
+                        <img class="w-full h-full object-cover" src="./images/work-4.webp" alt="tab-image">
+                        <div
+                            class="top-shadow duration-300 ease-in-out transition-all  p-4 w-full h-[50%] bg-[#13121291] absolute top-0 right-full group-hover:right-0">
+                            <h3 class="text-end text-2xl font-bold text-white">Art & Studio</h3>
+                            <p class="text-end text-white mt-2">UI/UX, Branding</p>
+                        </div>
+                        <div
+                            class="botton-shadow duration-300 ease-in-out transition-all  p-4 w-full h-[50%] bg-[#13121291] absolute bottom-0 left-full group-hover:left-0">
+                            <div class="">
+                                <div
+                                    class="w-15 h-15 absolute bottom-6  bg-[#28B463] rounded-full flex items-center justify-center">
+                                    <i class="bi bi-image text-2xl text-white"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-white h-120 shadow relative overflow-hidden group">
+                        <img class="w-full h-full object-cover" src="./images/work-5.webp" alt="tab-image">
+                        <div
+                            class="top-shadow duration-300 ease-in-out transition-all  p-4 w-full h-[50%] bg-[#13121291] absolute top-0 right-full group-hover:right-0">
+                            <h3 class="text-end text-2xl font-bold text-white">Art & Studio</h3>
+                            <p class="text-end text-white mt-2">UI/UX, Branding</p>
+                        </div>
+                        <div
+                            class="botton-shadow duration-300 ease-in-out transition-all  p-4 w-full h-[50%] bg-[#13121291] absolute bottom-0 left-full group-hover:left-0">
+                            <div class="">
+                                <div
+                                    class="w-15 h-15 absolute bottom-6  bg-[#28B463] rounded-full flex items-center justify-center">
+                                    <i class="bi bi-image text-2xl text-white"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-white h-120 shadow relative overflow-hidden group">
+                        <img class="w-full h-full object-cover" src="./images/work-6.webp" alt="tab-image">
+                        <div
+                            class="top-shadow duration-300 ease-in-out transition-all  p-4 w-full h-[50%] bg-[#13121291] absolute top-0 right-full group-hover:right-0">
+                            <h3 class="text-end text-2xl font-bold text-white">Art & Studio</h3>
+                            <p class="text-end text-white mt-2">UI/UX, Branding</p>
+                        </div>
+                        <div
+                            class="botton-shadow duration-300 ease-in-out transition-all  p-4 w-full h-[50%] bg-[#13121291] absolute bottom-0 left-full group-hover:left-0">
+                            <div class="">
+                                <div
+                                    class="w-15 h-15 absolute bottom-6  bg-[#28B463] rounded-full flex items-center justify-center">
+                                    <i class="bi bi-image text-2xl text-white"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Web -->
+                <div class="tab-pane hidden grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6" id="web">
+                    <div class="bg-white h-120 shadow relative overflow-hidden group">
+                        <img class="w-full h-full object-cover" src="./images/work-1 (1).webp" alt="tab-image">
+                        <div
+                            class="top-shadow duration-300 ease-in-out transition-all  p-4 w-full h-[50%] bg-[#13121291] absolute top-0 right-full group-hover:right-0">
+                            <h3 class="text-end text-2xl font-bold text-white">Art & Studio</h3>
+                            <p class="text-end text-white mt-2">UI/UX, Branding</p>
+                        </div>
+                        <div
+                            class="botton-shadow duration-300 ease-in-out transition-all  p-4 w-full h-[50%] bg-[#13121291] absolute bottom-0 left-full group-hover:left-0">
+                            <div class="">
+                                <div
+                                    class="w-15 h-15 absolute bottom-6  bg-[#28B463] rounded-full flex items-center justify-center">
+                                    <i class="bi bi-image text-2xl text-white"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-white h-120 shadow relative overflow-hidden group">
+                        <img class="w-full h-full object-cover" src="./images/work-2.webp" alt="tab-image">
+                        <div
+                            class="top-shadow duration-300 ease-in-out transition-all  p-4 w-full h-[50%] bg-[#13121291] absolute top-0 right-full group-hover:right-0">
+                            <h3 class="text-end text-2xl font-bold text-white">Art & Studio</h3>
+                            <p class="text-end text-white mt-2">UI/UX, Branding</p>
+                        </div>
+                        <div
+                            class="botton-shadow duration-300 ease-in-out transition-all  p-4 w-full h-[50%] bg-[#13121291] absolute bottom-0 left-full group-hover:left-0">
+                            <div class="">
+                                <div
+                                    class="w-15 h-15 absolute bottom-6  bg-[#28B463] rounded-full flex items-center justify-center">
+                                    <i class="bi bi-image text-2xl text-white"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-white h-120 shadow relative overflow-hidden group">
+                        <img class="w-full h-full object-cover" src="./images/work-3.webp" alt="tab-image">
+                        <div
+                            class="top-shadow duration-300 ease-in-out transition-all  p-4 w-full h-[50%] bg-[#13121291] absolute top-0 right-full group-hover:right-0">
+                            <h3 class="text-end text-2xl font-bold text-white">Art & Studio</h3>
+                            <p class="text-end text-white mt-2">UI/UX, Branding</p>
+                        </div>
+                        <div
+                            class="botton-shadow duration-300 ease-in-out transition-all  p-4 w-full h-[50%] bg-[#13121291] absolute bottom-0 left-full group-hover:left-0">
+                            <div class="">
+                                <div
+                                    class="w-15 h-15 absolute bottom-6  bg-[#28B463] rounded-full flex items-center justify-center">
+                                    <i class="bi bi-image text-2xl text-white"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-white h-120 shadow relative overflow-hidden group">
+                        <img class="w-full h-full object-cover" src="./images/work-4.webp" alt="tab-image">
+                        <div
+                            class="top-shadow duration-300 ease-in-out transition-all  p-4 w-full h-[50%] bg-[#13121291] absolute top-0 right-full group-hover:right-0">
+                            <h3 class="text-end text-2xl font-bold text-white">Art & Studio</h3>
+                            <p class="text-end text-white mt-2">UI/UX, Branding</p>
+                        </div>
+                        <div
+                            class="botton-shadow duration-300 ease-in-out transition-all  p-4 w-full h-[50%] bg-[#13121291] absolute bottom-0 left-full group-hover:left-0">
+                            <div class="">
+                                <div
+                                    class="w-15 h-15 absolute bottom-6  bg-[#28B463] rounded-full flex items-center justify-center">
+                                    <i class="bi bi-image text-2xl text-white"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- UI -->
+                <div class="tab-pane hidden grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6" id="ui">
+                    <div class="bg-white h-120 shadow relative overflow-hidden group">
+                        <img class="w-full h-full object-cover" src="./images/work-1 (1).webp" alt="tab-image">
+                        <div
+                            class="top-shadow duration-300 ease-in-out transition-all  p-4 w-full h-[50%] bg-[#13121291] absolute top-0 right-full group-hover:right-0">
+                            <h3 class="text-end text-2xl font-bold text-white">Art & Studio</h3>
+                            <p class="text-end text-white mt-2">UI/UX, Branding</p>
+                        </div>
+                        <div
+                            class="botton-shadow duration-300 ease-in-out transition-all  p-4 w-full h-[50%] bg-[#13121291] absolute bottom-0 left-full group-hover:left-0">
+                            <div class="">
+                                <div
+                                    class="w-15 h-15 absolute bottom-6  bg-[#28B463] rounded-full flex items-center justify-center">
+                                    <i class="bi bi-image text-2xl text-white"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-white h-120 shadow relative overflow-hidden group">
+                        <img class="w-full h-full object-cover" src="./images/work-2.webp" alt="tab-image">
+                        <div
+                            class="top-shadow duration-300 ease-in-out transition-all  p-4 w-full h-[50%] bg-[#13121291] absolute top-0 right-full group-hover:right-0">
+                            <h3 class="text-end text-2xl font-bold text-white">Art & Studio</h3>
+                            <p class="text-end text-white mt-2">UI/UX, Branding</p>
+                        </div>
+                        <div
+                            class="botton-shadow duration-300 ease-in-out transition-all  p-4 w-full h-[50%] bg-[#13121291] absolute bottom-0 left-full group-hover:left-0">
+                            <div class="">
+                                <div
+                                    class="w-15 h-15 absolute bottom-6  bg-[#28B463] rounded-full flex items-center justify-center">
+                                    <i class="bi bi-image text-2xl text-white"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-white h-120 shadow relative overflow-hidden group">
+                        <img class="w-full h-full object-cover" src="./images/work-3.webp" alt="tab-image">
+                        <div
+                            class="top-shadow duration-300 ease-in-out transition-all  p-4 w-full h-[50%] bg-[#13121291] absolute top-0 right-full group-hover:right-0">
+                            <h3 class="text-end text-2xl font-bold text-white">Art & Studio</h3>
+                            <p class="text-end text-white mt-2">UI/UX, Branding</p>
+                        </div>
+                        <div
+                            class="botton-shadow duration-300 ease-in-out transition-all  p-4 w-full h-[50%] bg-[#13121291] absolute bottom-0 left-full group-hover:left-0">
+                            <div class="">
+                                <div
+                                    class="w-15 h-15 absolute bottom-6  bg-[#28B463] rounded-full flex items-center justify-center">
+                                    <i class="bi bi-image text-2xl text-white"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- App -->
+                <div class="tab-pane hidden grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6" id="app">
+                    <div class="bg-white h-120 shadow relative overflow-hidden group">
+                        <img class="w-full h-full object-cover" src="./images/work-1 (1).webp" alt="tab-image">
+                        <div
+                            class="top-shadow duration-300 ease-in-out transition-all  p-4 w-full h-[50%] bg-[#13121291] absolute top-0 right-full group-hover:right-0">
+                            <h3 class="text-end text-2xl font-bold text-white">Art & Studio</h3>
+                            <p class="text-end text-white mt-2">UI/UX, Branding</p>
+                        </div>
+                        <div
+                            class="botton-shadow duration-300 ease-in-out transition-all  p-4 w-full h-[50%] bg-[#13121291] absolute bottom-0 left-full group-hover:left-0">
+                            <div class="">
+                                <div
+                                    class="w-15 h-15 absolute bottom-6  bg-[#28B463] rounded-full flex items-center justify-center">
+                                    <i class="bi bi-image text-2xl text-white"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-white h-120 shadow relative overflow-hidden group">
+                        <img class="w-full h-full object-cover" src="./images/work-2.webp" alt="tab-image">
+                        <div
+                            class="top-shadow duration-300 ease-in-out transition-all  p-4 w-full h-[50%] bg-[#13121291] absolute top-0 right-full group-hover:right-0">
+                            <h3 class="text-end text-2xl font-bold text-white">Art & Studio</h3>
+                            <p class="text-end text-white mt-2">UI/UX, Branding</p>
+                        </div>
+                        <div
+                            class="botton-shadow duration-300 ease-in-out transition-all  p-4 w-full h-[50%] bg-[#13121291] absolute bottom-0 left-full group-hover:left-0">
+                            <div class="">
+                                <div
+                                    class="w-15 h-15 absolute bottom-6  bg-[#28B463] rounded-full flex items-center justify-center">
+                                    <i class="bi bi-image text-2xl text-white"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+    <!-- Our Portfolio End -->
+
     <!-- Team Section  -->
     <section class="py-16 p-3 font-InterFont bg-primaryBgColor">
         <div class="container mx-auto">
@@ -877,8 +1200,21 @@
     <!-- Website Build End -->
 
     <!-- Blog Section -->
-    <section class="py-16 font-InterFont">
+    <section class="font-InterFont mb-20">
         <div class="max-w-7xl mx-auto px-4 relative">
+
+            <div class="service-title text-center p-4">
+                <h3 class="bg-primaryColor px-10 py-2 inline-block skew-x-[-25deg]">
+                    <span class="block text-[15px] text-white font-semibold skew-x-25">
+                        Blogs
+                    </span>
+                </h3>
+                <h2 class="lg:text-[30px] text-[20px] mt-5 text-headerFs font-semibold">LATEST ARTICLES</h2>
+                <p class="text-pera-fs mt-5 mb-10 text-secondary">All the lorem Ipsum generators on the Internet tend to
+                    repeat predefined chunks as <br class="hidden lg:block"> necessary, making this the first true
+                    generator on
+                    the Internet.</p>
+            </div>
 
             <!-- Swiper -->
             <div class="swiper blogSwiper">
@@ -1481,6 +1817,32 @@
             videoModal.classList.remove('flex');
 
             youtubeVideo.src = "";
+        });
+    </script>
+
+    <!-- Tabs Script -->
+    <script>
+        const buttons = document.querySelectorAll(".tab-btn");
+        const tabs = document.querySelectorAll(".tab-pane");
+
+        buttons.forEach((button) => {
+            button.addEventListener("click", () => {
+                // Hide all tabs
+                tabs.forEach((tab) => tab.classList.add("hidden"));
+
+                // Remove active style
+                buttons.forEach((btn) => {
+                    btn.classList.remove("bg-blue-600", "text-white");
+                    btn.classList.add("bg-white", "text-gray-700");
+                });
+
+                // Show selected tab
+                document.getElementById(button.dataset.tab).classList.remove("hidden");
+
+                // Active button
+                button.classList.remove("bg-white", "text-gray-700");
+                button.classList.add("bg-[#16A9EB]", "text-white");
+            });
         });
     </script>
 
