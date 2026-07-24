@@ -146,3 +146,11 @@
     }
   }
 }
+
+.mim-pagination {
+  position: absolute !important;
+  bottom: 7px !important;
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+  width: auto !important;
+}
