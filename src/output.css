@@ -12,7 +12,6 @@
     --color-blue-500: oklch(62.3% 0.214 259.815);
     --color-blue-600: oklch(54.6% 0.245 262.881);
     --color-gray-200: oklch(92.8% 0.006 264.531);
-    --color-gray-300: oklch(87.2% 0.01 258.338);
     --color-gray-700: oklch(37.3% 0.034 259.733);
     --color-gray-800: oklch(27.8% 0.033 256.848);
     --color-gray-900: oklch(21% 0.034 264.665);
@@ -61,6 +60,7 @@
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
     --text-pera-fs: 16px;
+    --text-primaryFont: 26px;
     --text-secondaryFont: 50px;
     --color-peraColor: #262626;
     --color-headerFs: #222222;
@@ -798,9 +798,6 @@
       background-color: color-mix(in oklab, var(--color-white) 20%, transparent);
     }
   }
-  .bg-\[url\(\'\.\/image\/miting\.png\'\)\] {
-    background-image: url('./image/miting.png');
-  }
   .bg-cover {
     background-size: cover;
   }
@@ -947,14 +944,14 @@
   .text-\[22px\] {
     font-size: 22px;
   }
-  .text-\[26px\] {
-    font-size: 26px;
-  }
   .text-\[40px\] {
     font-size: 40px;
   }
   .text-pera-fs {
     font-size: var(--text-pera-fs);
+  }
+  .text-primaryFont {
+    font-size: var(--text-primaryFont);
   }
   .leading-6 {
     --tw-leading: calc(var(--spacing) * 6);
@@ -1023,6 +1020,9 @@
   }
   .text-\[\#f5f5f5db\] {
     color: #f5f5f5db;
+  }
+  .text-\[\#ffffffc4\] {
+    color: #ffffffc4;
   }
   .text-amber-400 {
     color: var(--color-amber-400);
