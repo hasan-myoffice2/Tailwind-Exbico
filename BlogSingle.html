@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <!-- Font CDN Link -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./src/output.css">
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <style>
+        .swiper-button-next::after,
+        .swiper-button-prev::after {
+            font-size: 16px !important;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navabr Section -->
+    <nav>
+        <div class="bg-[#F9F9F9] py-3 font-InterFont">
+            <div class="container mx-auto contact-nav flex items-center lg:gap-6 gap-2 justify-center flex-wrap">
+                <div class="contact-menu flex gap-4">
+                    <span class="text-iconColor"><i class="fa-solid fa-phone"></i></span>
+                    <p class="text-peraColor font-medium text-pera-fs">Phone: +01784400984</p>
+                </div>
+                <div class="contact-menu flex gap-4">
+                    <span class="text-iconColor"><i class="fa-solid fa-envelope"></i></span>
+                    <p class="text-peraColor font-medium text-pera-fs">Email: momrasemahmud.com</p>
+                </div>
+                <div class="contact-menu flex gap-4">
+                    <span class="text-iconColor"><i class="fa-solid fa-location-dot"></i></span>
+                    <p class="text-peraColor font-medium text-pera-fs">Location: 28/A Street, The king city, USA</p>
+                </div>
+            </div>
+        </div>
+        <div class="navbar shadow py-4 px-3 lg:px-0 font-InterFont">
+            <div class="container mx-auto flex items-center justify-between">
+                <div class="brand-image">
+                    <img src="./images/company-logo.png" class="w-55 hidden lg:block lg:w-full" alt="company-logo">
+                    <img src="./images/Group 11 (1).png" class="lg:hidden" alt="company-logo">
+                </div>
+                <ul class="lg:flex hidden items-center lg:gap-8 font-semibold text-peraColor text-pera-fs">
+                    <li class="text-hoverColor"><a
+                            class="relative inline-block text-mim hover:text-hoverColor after:content-[''] after:absolute after:left-0 'after:-top-0' after:w-0 after:h-0.5 after:bg-hoverColor after:transition-all after:duration-300 hover:after:w-7"
+                            href="./index.html">Home</a></li>
+                    <li><a class="relative inline-block hover:text-hoverColor after:content-[''] after:absolute after:left-0 'after:-top-0' after:w-0 after:h-0.5 after:bg-hoverColor after:transition-all after:duration-300 hover:after:w-7"
+                            href="#">Service</a></li>
+                    <li><a class="relative active inline-block hover:text-hoverColor after:content-[''] after:absolute after:left-0 'after:-top-0' after:w-0 after:h-0.5 after:bg-hoverColor after:transition-all after:duration-300 hover:after:w-7"
+                            href="#">Portfolio</a></li>
+                    <li><a class="relative inline-block hover:text-hoverColor after:content-[''] after:absolute after:left-0 'after:-top-0' after:w-0 after:h-0.5 after:bg-hoverColor after:transition-all after:duration-300 hover:after:w-7"
+                            href="#">Blogs</a></li>
+                    <li><a class="relative inline-block hover:text-hoverColor after:content-[''] after:absolute after:left-0 'after:-top-0' after:w-0 after:h-0.5 after:bg-hoverColor after:transition-all after:duration-300 hover:after:w-7"
+                            href="#">Pages</a></li>
+                    <li><a class="relative inline-block hover:text-hoverColor after:content-[''] after:absolute after:left-0 'after:-top-0' after:w-0 after:h-0.5 after:bg-hoverColor after:transition-all after:duration-300 hover:after:w-7"
+                            href="./contact.html">Contact</a></li>
+                    <button
+                        class="py-3 px-4 border bg-buttonColor text-white transition-all hover:border-buttonColor hover:bg-white hover:text-buttonColor rounded">Get
+                        a
+                        Quote</button>
+                </ul>
+                <div class="mobile-menu-icons text-3xl lg:hidden"><i class="fa-solid fa-bars"></i></div>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- Portfolios Title -->
+    <section
+        class="bg-FooterBg font-InterFont bg-[url('/images/portfolios.png')] bg-cover bg-center bg-no-repeat relative">
+        <!-- <div class="absolute inset-0 bg-black/30"></div> -->
+        <div class="container mx-auto text-white p-4 lg:p-0">
+            <div class="Portfolios-Title py-30 lg:flex items-center justify-between">
+                <div>
+                    <h2
+                        class="relative inline-block font-semibold text-3xl mb-8 after:content-[''] after:absolute after:left-0 after:-bottom-4 after:w-16 after:h-1 after:bg-primaryColor">
+                        Blog Aria
+                    </h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, seddo <br class="hidden lg:block">
+                        eiusmod tempor incididunt ut labore et dolore.</p>
+                </div>
+                <ul class="flex items-center gap-5 mt-5 lg:mt-0">
+                    <a class="font-semibold text-[17px] hover:text-primaryColor transition-all"
+                        href="./index.html">Home</a>
+                    <li class="text-[12px]"><i class="bi bi-chevron-double-right"></i></li>
+                    <li class="text-primaryColor font-semibold">Blog Grid</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!-- Portfolios End -->
+
+    <!-- BlogSingle Section -->
+    <section class="py-20 bg-[#F7F7F7] font-InterFont">
+        <div class="max-w-7xl mx-auto px-4">
+
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-10">
+
+                <!-- Left Content -->
+                <div class="lg:col-span-2">
+                    <div class="bg-white p-8">
+                        <img class="w-full" src="./images/blogSingle.png" alt="">
+                        <ul class="flex items-center gap-6 flex-wrap mt-5 text-[15px]">
+                            <li class="text-[#555] font-semibold"><i class="bi bi-person text-primaryColor"></i> By
+                                Piklo D. Sindom</li>
+                            <li class="text-[#555]"><i class="bi bi-calendar-date text-primaryColor"></i> 05 June, 2019
+                            </li>
+                            <li class="text-[#555]"><i class="bi bi-chat text-primaryColor"></i> 30 comments</li>
+                        </ul>
+                        <h2 class="mt-5 mb-5 text-3xl font-semibold leading-10">We Provide any Kind of Business and
+                            Creative
+                            Consultant
+                            Solutions.</h2>
+                        <p class="text-[#555] text-[15px] leading-6">All users on MySpace will know that there are
+                            millions of
+                            people out
+                            there. Every day besides
+                            so many people joining this community, there are many others who will be looking out for
+                            friends. This will mean that they are naturally looking out for good people who are
+                            interesting enough. For this, the profile has to be very interesting. on MySpace will know
+                            that there are millions. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                            nostrud exercitation ullamco</p>
+                        <p class="text-[#555] text-[15px] leading-6 mt-6">Lorem ipsum dolor sit amet, consectetur
+                            adipisicing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                            voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                            cupidata.</p>
+                        <div class="py-10 mt-5 mb-5 bg-[#26313C] p-10 text-white font-semibold leading-7">
+                            <span></span>
+                            <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                tempor
+                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam Lorem ipsum dolor
+                                sit amet, consectetur adipisicing commodo.</p>
+                            <span class="">- John V. Doe</span>
+                        </div>
+                        <p class="text-[#555] text-[15px] leading-6">All users on MySpace will know that there are
+                            millions of
+                            people out
+                            there. Every day besides
+                            so many people joining this community, there are many others who will be looking out for
+                            friends. This will mean that they are naturally looking out for good people who are
+                            interesting enough. For this, the profile has to be very interesting. on MySpace will know
+                            that there are millions. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                            nostrud exercitation ullamco</p>
+                        <p class="text-[#555] text-[15px] leading-6 mt-6">Lorem ipsum dolor sit amet, consectetur
+                            adipisicing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                            voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                            cupidata.</p>
+                        <div class="py-10 lg:flex items-center justify-between gap-4">
+                            <div class="">
+                                <h3 class="mb-5 text-2xl font-semibold">Releted Tags</h3>
+                                <ul class="flex items-center gap-6 flex-wrap">
+                                    <li
+                                        class="py-3 px-6 bg-[#d1cece] rounded-sm hover:bg-primaryColor hover:text-white transition-all">
+                                        POPULAR</li>
+                                    <li
+                                        class="py-3 px-6 bg-[#d1cece] rounded-sm hover:bg-primaryColor hover:text-white transition-all">
+                                        DESSIGN</li>
+                                    <li
+                                        class="py-3 px-6 bg-[#d1cece] rounded-sm hover:bg-primaryColor hover:text-white transition-all">
+                                        UX</li>
+                                </ul>
+                            </div>
+                            <div class="py-5">
+                                <h3 class="text-2xl font-semibold mb-5">Share Now</h3>
+                                <ul class="flex items-center gap-4">
+                                    <li
+                                        class="w-11 rounded-full h-11 text-[#333333] hover:bg-primaryColor hover:text-white transition-all bg-[#d1cece] flex items-center justify-center">
+                                        <a href="#"><i class="bi bi-facebook"></i></a>
+                                    </li>
+                                    <li
+                                        class="w-11 rounded-full h-11 text-[#333333] hover:bg-primaryColor hover:text-white transition-all bg-[#d1cece] flex items-center justify-center">
+                                        <a href="#"><i class="bi bi-twitter"></i></a>
+                                    </li>
+                                    <li
+                                        class="w-11 rounded-full h-11 text-[#333333] hover:bg-primaryColor hover:text-white transition-all bg-[#d1cece] flex items-center justify-center">
+                                        <a href="#"><i class="bi bi-globe"></i></a>
+                                    </li>
+                                    <li
+                                        class="w-11 rounded-full h-11 text-[#333333] hover:bg-primaryColor hover:text-white transition-all bg-[#d1cece] flex items-center justify-center">
+                                        <a href="#"><i class="bi bi-linkedin"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <hr class="text-[#ddd]">
+                    </div>
+                </div>
+
+                <!-- Right Sidebar -->
+                <div class="space-y-8">
+
+                    <!-- Project Info -->
+                    <div class="bg-white shadow-lg border border-gray-100 p-8">
+                        <h3 class="text-2xl font-bold text-primaryColor mb-6">
+                            Search Objects
+                        </h3>
+                        <ul class="flex items-center">
+                            <li class="">
+                                <input
+                                    class="border text-[17px] focus:ring-0 border-transparent focus:outline-none bg-gray-200 py-3  px-4"
+                                    type="text">
+                            </li>
+                            <li class="w-13 h-13 flex items-center justify-center text-white bg-primaryColor"><i
+                                    class="bi bi-search"></i></li>
+                        </ul>
+                    </div>
+
+                    <!-- Popular Articles -->
+                    <div class="bg-white shadow-lg border border-gray-100 p-8">
+
+                        <h3 class="text-2xl font-bold text-primaryColor mb-6">
+                            Popular Articles
+                        </h3>
+
+                        <div class="space-y-3 flex items-center gap-3">
+                            <img class="w-22" src="./images/blogside1.png" alt="blog-side-one">
+                            <div>
+                                <h3
+                                    class="text-[17px] hover:text-primaryColor transition-all font-semibold mb-2 text-[#555]">
+                                    The Best
+                                    Dolor Sitamet Content
+                                    Adipiscing
+                                </h3>
+                                <span class="text-[#333]"><i class="bi bi-calendar-date text-primaryColor me-1"></i> 28
+                                    January
+                                    2020</span>
+                            </div>
+                        </div>
+                        <hr class="mb-5 mt-5 text-[#ddd]">
+                        <div class="space-y-3 flex items-center gap-3">
+                            <img class="w-22" src="./images/blogside2.png" alt="blog-side-one">
+                            <div>
+                                <h3
+                                    class="text-[17px] hover:text-primaryColor transition-all font-semibold mb-2 text-[#555]">
+                                    Business
+                                    is Pulvinar Metuseu
+                                    Venenatis pellen.
+                                </h3>
+                                <span class="text-[#333]"><i class="bi bi-calendar-date text-primaryColor me-1"></i> 25
+                                    April
+                                    2020</span>
+                            </div>
+                        </div>
+                        <hr class="mb-5 mt-5 text-[#ddd]">
+                        <div class="space-y-3 flex items-center gap-3">
+                            <img class="w-22" src="./images/blogside3.png" alt="blog-side-one">
+                            <div>
+                                <h3
+                                    class="text-[17px] hover:text-primaryColor transition-all font-semibold mb-2 text-[#555]">
+                                    Consulting Needs the Big Oxmox
+                                    advised Bestania.
+                                </h3>
+                                <span class="text-[#333]"><i class="bi bi-calendar-date text-primaryColor me-1"></i> 24
+                                    March
+                                    2020</span>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- Categorys -->
+                    <div class="bg-white shadow-lg border border-gray-100 p-8">
+
+                        <h3 class="text-2xl font-bold text-primaryColor mb-6">
+                            CATEGORIES
+                        </h3>
+
+                        <div class="space-y-3">
+                            <ul class="bg-gray-200">
+                                <li
+                                    class="w-full hover:bg-primaryColor hover:text-white text-[#333] pl-6 group transition-all flex items-center justify-between">
+                                    Business <span
+                                        class="bg-primaryColor text-white transition-all duration-300 group-hover:bg-gray-400 group-hover:text-white py-3 px-3">26</span>
+                                </li>
+                                <li
+                                    class="w-full hover:bg-primaryColor hover:text-white text-[#333] pl-6 group transition-all flex items-center justify-between">
+                                    Consultant <span
+                                        class="bg-primaryColor text-white transition-all duration-300 group-hover:bg-gray-400 group-hover:text-white py-3 px-3">28</span>
+                                </li>
+                                <li
+                                    class="w-full hover:bg-primaryColor hover:text-white text-[#333] pl-6 group transition-all flex items-center justify-between">
+                                    Creative <span
+                                        class="bg-primaryColor text-white transition-all duration-300 group-hover:bg-gray-400 group-hover:text-white py-3 px-3">30</span>
+                                </li>
+                                <li
+                                    class="w-full hover:bg-primaryColor hover:text-white text-[#333] pl-6 group transition-all flex items-center justify-between">
+                                    UI/UX <span
+                                        class="bg-primaryColor text-white transition-all duration-300 group-hover:bg-gray-400 group-hover:text-white py-3 px-3">32</span>
+                                </li>
+                                <li
+                                    class="w-full hover:bg-primaryColor hover:text-white text-[#333] pl-6 group transition-all flex items-center justify-between">
+                                    Technology <span
+                                        class="bg-primaryColor text-white transition-all duration-300 group-hover:bg-gray-400 group-hover:text-white py-3 px-3">26</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Never Miss News -->
+                    <div class="bg-white shadow-lg border border-gray-100 p-8">
+
+                        <h3 class="text-2xl font-bold uppercase text-primaryColor mb-6">
+                            Never Miss News
+                        </h3>
+                        <hr class="mb-7 text-[#ddd]">
+                        <div class="space-y-3">
+                            <ul class="flex items-center gap-4">
+                                <li
+                                    class="w-11 h-11 text-[#333333] hover:bg-primaryColor hover:text-white transition-all bg-[#d1cece] flex items-center justify-center">
+                                    <a href="#"><i class="bi bi-facebook"></i></a>
+                                </li>
+                                <li
+                                    class="w-11 h-11 text-[#333333] hover:bg-primaryColor hover:text-white transition-all bg-[#d1cece] flex items-center justify-center">
+                                    <a href="#"><i class="bi bi-twitter"></i></a>
+                                </li>
+                                <li
+                                    class="w-11 h-11 text-[#333333] hover:bg-primaryColor hover:text-white transition-all bg-[#d1cece] flex items-center justify-center">
+                                    <a href="#"><i class="bi bi-globe"></i></a>
+                                </li>
+                                <li
+                                    class="w-11 h-11 text-[#333333] hover:bg-primaryColor hover:text-white transition-all bg-[#d1cece] flex items-center justify-center">
+                                    <a href="#"><i class="bi bi-linkedin"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Popular Tags -->
+                    <div class="bg-white shadow-lg border border-gray-100 p-8">
+
+                        <h3 class="text-2xl font-bold uppercase text-primaryColor mb-6">
+                            Popular Tags
+                        </h3>
+                        <hr class="mb-7 text-[#ddd]">
+                        <div class="space-y-3">
+                            <ul class="flex flex-wrap gap-4 gap-y-8">
+                                <li><a class="bg-[#d1cece] hover:bg-primaryColor hover:text-white transition-all py-3 px-4 text-[14px] text-[#333] font-semibold rounded-sm"
+                                        href="#">Popular</a>
+                                </li>
+                                <li><a class="bg-[#d1cece] hover:bg-primaryColor hover:text-white transition-all py-3 px-4 text-[14px] text-[#333] font-semibold rounded-sm"
+                                        href="#">Design</a>
+                                </li>
+                                <li><a class="bg-[#d1cece] hover:bg-primaryColor hover:text-white transition-all py-3 px-4 text-[14px] text-[#333] font-semibold rounded-sm"
+                                        href="#">Ux</a>
+                                </li>
+                                <li><a class="bg-[#d1cece] hover:bg-primaryColor hover:text-white transition-all py-3 px-4 text-[14px] text-[#333] font-semibold rounded-sm"
+                                        href="#">Usabilily</a>
+                                </li>
+                                <li><a class="bg-[#d1cece] hover:bg-primaryColor hover:text-white transition-all py-3 px-4 text-[14px] text-[#333] font-semibold rounded-sm"
+                                        href="#">Develop</a>
+                                </li>
+                                <li><a class="bg-[#d1cece] hover:bg-primaryColor hover:text-white transition-all py-3 px-4 text-[14px] text-[#333] font-semibold rounded-sm"
+                                        href="#">Icon</a>
+                                </li>
+                                <li><a class="bg-[#d1cece] hover:bg-primaryColor hover:text-white transition-all py-3 px-4 text-[14px] text-[#333] font-semibold rounded-sm"
+                                        href="#">Busness</a>
+                                </li>
+                                <li><a class="bg-[#d1cece] hover:bg-primaryColor hover:text-white transition-all py-3 px-4 text-[14px] text-[#333] font-semibold rounded-sm"
+                                        href="#">Consuld</a>
+                                </li>
+                                <li><a class="bg-[#d1cece] hover:bg-primaryColor hover:text-white transition-all py-3 px-4 text-[14px] text-[#333] font-semibold rounded-sm"
+                                        href="#">Kit</a>
+                                </li>
+                                <li><a class="bg-[#d1cece] hover:bg-primaryColor hover:text-white transition-all py-3 px-4 text-[14px] text-[#333] font-semibold rounded-sm"
+                                        href="#">Keyboard</a>
+                                </li>
+                                <li><a class="bg-[#d1cece] hover:bg-primaryColor hover:text-white transition-all py-3 px-4 text-[14px] text-[#333] font-semibold rounded-sm"
+                                        href="#">Mouse</a>
+                                </li>
+                                <li><a class="bg-[#d1cece] hover:bg-primaryColor hover:text-white transition-all py-3 px-4 text-[14px] text-[#333] font-semibold rounded-sm"
+                                        href="#">Tech</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+    <!-- BlogSingle End -->
+
+    <!-- Subscribe Section -->
+    <section class="py-10 bg-primaryBgColor font-InterFont"
+        style="background-image: url(./image/subscribe-bg.4015bddb.jpg); background-repeat: no-repeat; object-fit: cover; background-size: cover; background-position: top;">
+        <div class="container mx-auto p-4 lg:p-0">
+            <h2 class="text-[18px] text-headerFs font-bold">Subscribe & stay updated</h2>
+            <p class="text-pera-fs mt-2 text-secondary">Posuere nam natoque nec rhoncus malesuad phasel ante.</p>
+            <div class="flex items-center gap-4 mt-5 flex-wrap">
+                <input class="bg-white focus:outline-none py-3  px-3 w-100" placeholder="Your email Adress" type="text">
+                <button
+                    class="py-3 px-6 bg-primaryColor hover:bg-transparent transition border hover:text-hoverColor border-transparent hover:border-hoverColor font-medium text-white">Subscribe
+                    Now</button>
+            </div>
+        </div>
+    </section>
+    <!-- Subscribe End -->
+
+    <!-- Footer Section -->
+    <footer class="text-[#cccccc] bg-FooterBg py-16 px-6 font-InterFont">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+
+            <div>
+                <h2 class="mb-6"><img src="./images/footer1.png" alt="footer-image">
+                </h2>
+                <p class="leading-relaxed mb-8">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore
+                    et dolore magna.
+                </p>
+                <div class="flex items-center border border-[#ffffff3d] p-4 rounded-sm w-fit">
+                    <div
+                        class="bg-primaryColor p-3 w-10 h-10 flex items-center justify-center rounded-full mr-4 text-white">
+                        <i class="fa-regular fa-headphones"></i>
+                    </div>
+                    <div>
+                        <p class="text-xs uppercase text-[#f5f5f5db]">Talk To Our Support</p>
+                        <p class="text-white font-semibold mt-1">1-322-344-888</p>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <h3 class="text-[20px] font-bold text-white mb-6 relative inline-block">
+                    Quick Links
+                    <span class="block border w-10 bg-white mt-2"></span>
+                </h3>
+                <ul class="space-y-4">
+                    <li><a href="#" class="hover:text-hoverColor flex items-center transition-colors">
+                            <span class="mr-2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                    fill="currentColor" class="bi bi-chevron-double-right" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd"
+                                        d="M3.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L9.293 8 3.646 2.354a.5.5 0 0 1 0-.708" />
+                                    <path fill-rule="evenodd"
+                                        d="M7.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L13.293 8 7.646 2.354a.5.5 0 0 1 0-.708" />
+                                </svg></span> About us
+                        </a></li>
+                    <li><a href="#" class="hover:text-hoverColor flex items-center transition-colors">
+                            <span class="mr-2 text-sm"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                    fill="currentColor" class="bi bi-chevron-double-right" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd"
+                                        d="M3.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L9.293 8 3.646 2.354a.5.5 0 0 1 0-.708" />
+                                    <path fill-rule="evenodd"
+                                        d="M7.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L13.293 8 7.646 2.354a.5.5 0 0 1 0-.708" />
+                                </svg></span> Our Services
+                        </a></li>
+                    <li><a href="#" class="hover:text-hoverColor flex items-center transition-colors">
+                            <span class="mr-2 text-sm"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                    fill="currentColor" class="bi bi-chevron-double-right" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd"
+                                        d="M3.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L9.293 8 3.646 2.354a.5.5 0 0 1 0-.708" />
+                                    <path fill-rule="evenodd"
+                                        d="M7.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L13.293 8 7.646 2.354a.5.5 0 0 1 0-.708" />
+                                </svg></span> Creative Portfolio
+                        </a></li>
+                    <li><a href="#" class="hover:text-hoverColor flex items-center transition-colors">
+                            <span class="mr-2 text-sm"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                    fill="currentColor" class="bi bi-chevron-double-right" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd"
+                                        d="M3.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L9.293 8 3.646 2.354a.5.5 0 0 1 0-.708" />
+                                    <path fill-rule="evenodd"
+                                        d="M7.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L13.293 8 7.646 2.354a.5.5 0 0 1 0-.708" />
+                                </svg></span> Our Pricing
+                        </a></li>
+                    <li><a href="#" class="hover:text-hoverColor text-[#cccccc] flex items-center transition-colors">
+                            <span class="mr-2 text-sm"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                    fill="currentColor" class="bi bi-chevron-double-right" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd"
+                                        d="M3.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L9.293 8 3.646 2.354a.5.5 0 0 1 0-.708" />
+                                    <path fill-rule="evenodd"
+                                        d="M7.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L13.293 8 7.646 2.354a.5.5 0 0 1 0-.708" />
+                                </svg></span> Contact us
+                        </a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h3 class="text-[20px] font-bold text-white mb-6 relative inline-block">
+                    Latest News
+                    <span class="block border w-10 bg-white mt-2"></span>
+                </h3>
+                <div class="space-y-6">
+                    <div class="flex gap-4">
+                        <img src="./images/service1.png" alt="News"
+                            class="w-20 h-20 object-cover rounded-sm border p-1.5 border-[#ffffff3d]">
+                        <div>
+                            <h4
+                                class="text-[#cccccc] text-sm font-semibold leading-snug hover:text-hoverColor cursor-pointer transition-colors">
+                                Define World Best IT Solution Technology
+                            </h4>
+                            <p class="text-sm mt-2 flex text-[#cccccc] items-center">
+                                <span class="mr-1">🕒</span> 24th March 2020
+                            </p>
+                        </div>
+                    </div>
+                    <div class="flex gap-4">
+                        <img src="./images/service1.png" alt="News"
+                            class="w-20 h-20 object-cover rounded-sm border p-1.5 border-[#ffffff3d]">
+                        <div>
+                            <h4
+                                class="text-[#cccccc] text-sm font-semibold leading-snug hover:text-hoverColor cursor-pointer transition-colors">
+                                Define World Best IT Solution Technology
+                            </h4>
+                            <p class="text-sm text-[#cccccc] mt-2 flex items-center">
+                                <span class="mr-1 text-hoverColor">🕒</span> 24th March 2020
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <h3 class="text-[20px] font-bold text-white mb-6 relative inline-block">
+                    Contact
+                    <span class="block border w-10 bg-white mt-2"></span>
+                </h3>
+                <ul class="space-y-5">
+                    <li class="flex items-start">
+                        <span class="bg-hovertext-hoverColor p-1.5 rounded-sm mr-3 mt-1 text-white">
+                            <svg class="h-4 w-4" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd"
+                                    d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z"
+                                    clip-rule="evenodd"></path>
+                            </svg>
+                        </span>
+                        <span>28/A Street, The king city, USA</span>
+                    </li>
+                    <li class="flex items-center">
+                        <span class="bg-hovertext-hoverColor p-1.5 rounded-sm mr-3 text-white">
+                            <svg class="h-4 w-4" fill="currentColor" viewBox="0 0 20 20">
+                                <path
+                                    d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 004.87 4.87l.774-1.548a1 1 0 011.06-.539l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z">
+                                </path>
+                            </svg>
+                        </span>
+                        <span>+0123456789</span>
+                    </li>
+                    <li class="flex items-center">
+                        <span class="bg-hovertext-hoverColor p-1.5 rounded-sm mr-3 text-white">
+                            <svg class="h-4 w-4" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path>
+                                <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path>
+                            </svg>
+                        </span>
+                        <span>info@example.com</span>
+                    </li>
+                </ul>
+
+                <div class="flex gap-3 mt-8">
+                    <a href="#"
+                        class="w-9 h-9 rounded-full border border-white flex items-center justify-center hover:bg-hoverColor hover:text-whiteColor transition text-white"><i
+                            class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"
+                        class="w-9 h-9 rounded-full border border-white flex items-center justify-center hover:bg-hoverColor hover:text-whiteColor transition text-white"><i
+                            class="fa-brands fa-twitter"></i></a>
+                    <a href="#"
+                        class="w-9 h-9 rounded-full border border-white flex items-center justify-center hover:bg-hoverColor hover:text-whiteColor transition text-white"><i
+                            class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="#"
+                        class="w-9 h-9 rounded-full border border-white flex items-center justify-center hover:bg-hoverColor hover:text-whiteColor transition text-white"><i
+                            class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+    <!-- Footer End -->
+
+</body>
+
+</html>
