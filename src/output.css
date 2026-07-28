@@ -11,7 +11,6 @@
     --color-red-500: oklch(63.7% 0.237 25.331);
     --color-amber-400: oklch(82.8% 0.189 84.429);
     --color-green-500: oklch(72.3% 0.219 149.579);
-    --color-green-600: oklch(62.7% 0.194 149.214);
     --color-blue-500: oklch(62.3% 0.214 259.815);
     --color-blue-600: oklch(54.6% 0.245 262.881);
     --color-gray-100: oklch(96.7% 0.003 264.542);
@@ -267,9 +266,6 @@
   .top-6 {
     top: calc(var(--spacing) * 6);
   }
-  .top-10 {
-    top: calc(var(--spacing) * 10);
-  }
   .top-full {
     top: 100%;
   }
@@ -335,9 +331,6 @@
   }
   .me-1 {
     margin-inline-end: var(--spacing);
-  }
-  .me-2 {
-    margin-inline-end: calc(var(--spacing) * 2);
   }
   .-mt-35 {
     margin-top: calc(var(--spacing) * -35);
@@ -410,9 +403,6 @@
   }
   .mb-20 {
     margin-bottom: calc(var(--spacing) * 20);
-  }
-  .ml-2 {
-    margin-left: calc(var(--spacing) * 2);
   }
   .block {
     display: block;
@@ -513,9 +503,6 @@
   }
   .w-0 {
     width: 0;
-  }
-  .w-2 {
-    width: calc(var(--spacing) * 2);
   }
   .w-3 {
     width: calc(var(--spacing) * 3);
@@ -734,9 +721,6 @@
   .rounded-4xl {
     border-radius: var(--radius-4xl);
   }
-  .rounded-\[6px\] {
-    border-radius: 6px;
-  }
   .rounded-full {
     border-radius: calc(infinity * 1px);
   }
@@ -803,12 +787,6 @@
   }
   .bg-FooterBg {
     background-color: var(--color-FooterBg);
-  }
-  .bg-\[\#000\] {
-    background-color: #000;
-  }
-  .bg-\[\#0000005b\] {
-    background-color: #0000005b;
   }
   .bg-\[\#16A9EB\] {
     background-color: #16A9EB;
@@ -890,9 +868,6 @@
   }
   .bg-primaryColor {
     background-color: var(--color-primaryColor);
-  }
-  .bg-red-200 {
-    background-color: var(--color-red-200);
   }
   .bg-red-500 {
     background-color: var(--color-red-500);
@@ -1052,9 +1027,6 @@
     font-size: var(--text-xs);
     line-height: var(--tw-leading, var(--text-xs--line-height));
   }
-  .text-\[10px\] {
-    font-size: 10px;
-  }
   .text-\[12px\] {
     font-size: 12px;
   }
@@ -1063,9 +1035,6 @@
   }
   .text-\[15px\] {
     font-size: 15px;
-  }
-  .text-\[16px\] {
-    font-size: 16px;
   }
   .text-\[17px\] {
     font-size: 17px;
@@ -1078,9 +1047,6 @@
   }
   .text-\[22px\] {
     font-size: 22px;
-  }
-  .text-\[23px\] {
-    font-size: 23px;
   }
   .text-\[24px\] {
     font-size: 24px;
@@ -1134,10 +1100,6 @@
     --tw-font-weight: var(--font-weight-bold);
     font-weight: var(--font-weight-bold);
   }
-  .font-light {
-    --tw-font-weight: var(--font-weight-light);
-    font-weight: var(--font-weight-light);
-  }
   .font-medium {
     --tw-font-weight: var(--font-weight-medium);
     font-weight: var(--font-weight-medium);
@@ -1154,6 +1116,12 @@
     --tw-tracking: var(--tracking-wider);
     letter-spacing: var(--tracking-wider);
   }
+  .text-\[\#000\] {
+    color: #000;
+  }
+  .text-\[\#555\] {
+    color: #555;
+  }
   .text-\[\#333333\] {
     color: #333333;
   }
@@ -1165,9 +1133,6 @@
   }
   .text-\[\#dddddd87\] {
     color: #dddddd87;
-  }
-  .text-\[\#f5f5f5\] {
-    color: #f5f5f5;
   }
   .text-\[\#f5f5f5db\] {
     color: #f5f5f5db;
@@ -1335,32 +1300,12 @@
       }
     }
   }
-  .group-hover\:scale-110 {
-    &:is(:where(.group):hover *) {
-      @media (hover: hover) {
-        --tw-scale-x: 110%;
-        --tw-scale-y: 110%;
-        --tw-scale-z: 110%;
-        scale: var(--tw-scale-x) var(--tw-scale-y);
-      }
-    }
-  }
   .group-hover\:scale-120 {
     &:is(:where(.group):hover *) {
       @media (hover: hover) {
         --tw-scale-x: 120%;
         --tw-scale-y: 120%;
         --tw-scale-z: 120%;
-        scale: var(--tw-scale-x) var(--tw-scale-y);
-      }
-    }
-  }
-  .group-hover\:scale-150 {
-    &:is(:where(.group):hover *) {
-      @media (hover: hover) {
-        --tw-scale-x: 150%;
-        --tw-scale-y: 150%;
-        --tw-scale-z: 150%;
         scale: var(--tw-scale-x) var(--tw-scale-y);
       }
     }
