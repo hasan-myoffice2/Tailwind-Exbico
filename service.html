@@ -1,570 +1,884 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
     <!-- Font CDN Link -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
     <!-- Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./src/output.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./src/output.css" />
     <!-- Swiper CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <style>
-        .swiper-button-next::after,
-        .swiper-button-prev::after {
-            font-size: 16px !important;
-            font-weight: bold;
-        }
+      .swiper-button-next::after,
+      .swiper-button-prev::after {
+        font-size: 16px !important;
+        font-weight: bold;
+      }
     </style>
-</head>
+  </head>
 
-<body>
+  <body>
     <!-- Navabr Section -->
     <nav>
-        <div class="bg-[#F9F9F9] py-3 font-InterFont">
-            <div class="container mx-auto contact-nav flex items-center lg:gap-6 gap-2 justify-center flex-wrap">
-                <div class="contact-menu flex gap-4">
-                    <span class="text-iconColor"><i class="fa-solid fa-phone"></i></span>
-                    <p class="text-peraColor font-medium text-pera-fs">Phone: +01784400984</p>
-                </div>
-                <div class="contact-menu flex gap-4">
-                    <span class="text-iconColor"><i class="fa-solid fa-envelope"></i></span>
-                    <p class="text-peraColor font-medium text-pera-fs">Email: momrasemahmud.com</p>
-                </div>
-                <div class="contact-menu flex gap-4">
-                    <span class="text-iconColor"><i class="fa-solid fa-location-dot"></i></span>
-                    <p class="text-peraColor font-medium text-pera-fs">Location: 28/A Street, The king city, USA</p>
-                </div>
-            </div>
+      <div class="bg-[#F9F9F9] py-3 font-InterFont">
+        <div
+          class="container mx-auto contact-nav flex items-center lg:gap-6 gap-2 justify-center flex-wrap"
+        >
+          <div class="contact-menu flex gap-4">
+            <span class="text-iconColor"
+              ><i class="fa-solid fa-phone"></i
+            ></span>
+            <p class="text-peraColor font-medium text-pera-fs">
+              Phone: +01784400984
+            </p>
+          </div>
+          <div class="contact-menu flex gap-4">
+            <span class="text-iconColor"
+              ><i class="fa-solid fa-envelope"></i
+            ></span>
+            <p class="text-peraColor font-medium text-pera-fs">
+              Email: momrasemahmud.com
+            </p>
+          </div>
+          <div class="contact-menu flex gap-4">
+            <span class="text-iconColor"
+              ><i class="fa-solid fa-location-dot"></i
+            ></span>
+            <p class="text-peraColor font-medium text-pera-fs">
+              Location: 28/A Street, The king city, USA
+            </p>
+          </div>
         </div>
-        <div class="navbar shadow py-4 px-3 lg:px-0 font-InterFont">
-            <div class="container mx-auto flex items-center justify-between">
-                <div class="brand-image">
-                    <img src="./images/company-logo.png" class="w-55 hidden lg:block lg:w-full" alt="company-logo">
-                    <img src="./images/Group 11 (1).png" class="lg:hidden" alt="company-logo">
-                </div>
-                <ul class="lg:flex hidden items-center lg:gap-8 font-semibold text-peraColor text-pera-fs">
-                    <li class="text-hoverColor"><a
-                            class="relative inline-block text-mim hover:text-hoverColor after:content-[''] after:absolute after:left-0 'after:-top-0' after:w-0 after:h-0.5 after:bg-hoverColor after:transition-all after:duration-300 hover:after:w-7"
-                            href="./index.html">Home</a></li>
-                    <li><a class="relative active inline-block hover:text-hoverColor after:content-[''] after:absolute after:left-0 'after:-top-0' after:w-0 after:h-0.5 after:bg-hoverColor after:transition-all after:duration-300 hover:after:w-7"
-                            href="#">Service</a></li>
-                    <li class="relative group">
-                        <a href="#"
-                            class="relative inline-block py-2 hover:text-hoverColor after:content-[''] after:absolute after:left-0 'after:-top-0' after:w-0 after:h-0.5 after:bg-hoverColor after:transition-all after:duration-300 hover:after:w-7">
-                            Portfolio
-                        </a>
+      </div>
+      <div class="navbar shadow py-4 px-3 lg:px-0 font-InterFont">
+        <div class="container mx-auto flex items-center justify-between">
+          <div class="brand-image">
+            <img
+              src="./images/company-logo.png"
+              class="w-55 hidden lg:block lg:w-full"
+              alt="company-logo"
+            />
+            <img
+              src="./images/Group 11 (1).png"
+              class="lg:hidden"
+              alt="company-logo"
+            />
+          </div>
+          <ul
+            class="lg:flex hidden items-center lg:gap-8 font-semibold text-peraColor text-pera-fs"
+          >
+            <li class="text-hoverColor">
+              <a
+                class="relative inline-block text-mim hover:text-hoverColor after:content-[''] after:absolute after:left-0 'after:-top-0' after:w-0 after:h-0.5 after:bg-hoverColor after:transition-all after:duration-300 hover:after:w-7"
+                href="./index.html"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                class="relative active inline-block hover:text-hoverColor after:content-[''] after:absolute after:left-0 'after:-top-0' after:w-0 after:h-0.5 after:bg-hoverColor after:transition-all after:duration-300 hover:after:w-7"
+                href="#"
+                >Service</a
+              >
+            </li>
+            <li class="relative group">
+              <a
+                href="#"
+                class="relative inline-block py-2 hover:text-hoverColor after:content-[''] after:absolute after:left-0 'after:-top-0' after:w-0 after:h-0.5 after:bg-hoverColor after:transition-all after:duration-300 hover:after:w-7"
+              >
+                Portfolio
+              </a>
 
-                        <ul style="width: 200px;"
-                            class="absolute left-0 text-white py-4 top-full z-50 bg-primaryColor shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300">
-                            <li class="hover:bg-white hover:text-black transition-all">
-                                <a href="./portfolios.html" class="block px-4 py-2">
-                                    Portfolios
-                                </a>
-                            </li>
-                            <li class="hover:bg-white hover:text-black transition-all">
-                                <a href="./singPortfolios.html" class="block px-4 py-2">
-                                    Single Portfolios
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="relative group">
-                        <a href="#"
-                            class="relative inline-block py-2 hover:text-hoverColor after:content-[''] after:absolute after:left-0 'after:-top-0' after:w-0 after:h-0.5 after:bg-hoverColor after:transition-all after:duration-300 hover:after:w-7">
-                            Blogs
-                        </a>
+              <ul
+                style="width: 200px"
+                class="absolute left-0 text-white py-4 top-full z-50 bg-primaryColor shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300"
+              >
+                <li class="hover:bg-white hover:text-black transition-all">
+                  <a href="./portfolios.html" class="block px-4 py-2">
+                    Portfolios
+                  </a>
+                </li>
+                <li class="hover:bg-white hover:text-black transition-all">
+                  <a href="./singPortfolios.html" class="block px-4 py-2">
+                    Single Portfolios
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="relative group">
+              <a
+                href="#"
+                class="relative inline-block py-2 hover:text-hoverColor after:content-[''] after:absolute after:left-0 'after:-top-0' after:w-0 after:h-0.5 after:bg-hoverColor after:transition-all after:duration-300 hover:after:w-7"
+              >
+                Blogs
+              </a>
 
-                        <ul style="width: 200px;"
-                            class="absolute left-0 text-white py-4 top-full z-50 bg-primaryColor shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300">
-                            <li class="hover:bg-white hover:text-black transition-all">
-                                <a href="./blogArchive.html" class="block px-4 py-2">
-                                    Blogs Archive
-                                </a>
-                            </li>
-                            <li class="hover:bg-white hover:text-black transition-all">
-                                <a href="./blogSide.html" class="block px-4 py-2">
-                                    Blog With Sidebar
-                                </a>
-                            </li>
-                            <li class="hover:bg-white hover:text-black transition-all">
-                                <a href="./BlogSingle.html" class="block px-4 py-2">
-                                    Blog Single
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li><a class="relative inline-block hover:text-hoverColor after:content-[''] after:absolute after:left-0 'after:-top-0' after:w-0 after:h-0.5 after:bg-hoverColor after:transition-all after:duration-300 hover:after:w-7"
-                            href="#">Pages</a></li>
-                    <li><a class="relative inline-block hover:text-hoverColor after:content-[''] after:absolute after:left-0 'after:-top-0' after:w-0 after:h-0.5 after:bg-hoverColor after:transition-all after:duration-300 hover:after:w-7"
-                            href="./contact.html">Contact</a></li>
-                    <button
-                        class="py-3 px-4 border bg-buttonColor text-white transition-all hover:border-buttonColor hover:bg-white hover:text-buttonColor rounded">Get
-                        a
-                        Quote</button>
-                </ul>
-                <div class="mobile-menu-icons text-3xl lg:hidden"><i class="fa-solid fa-bars"></i></div>
-            </div>
+              <ul
+                style="width: 200px"
+                class="absolute left-0 text-white py-4 top-full z-50 bg-primaryColor shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300"
+              >
+                <li class="hover:bg-white hover:text-black transition-all">
+                  <a href="./blogArchive.html" class="block px-4 py-2">
+                    Blogs Archive
+                  </a>
+                </li>
+                <li class="hover:bg-white hover:text-black transition-all">
+                  <a href="./blogSide.html" class="block px-4 py-2">
+                    Blog With Sidebar
+                  </a>
+                </li>
+                <li class="hover:bg-white hover:text-black transition-all">
+                  <a href="./BlogSingle.html" class="block px-4 py-2">
+                    Blog Single
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a
+                class="relative inline-block hover:text-hoverColor after:content-[''] after:absolute after:left-0 'after:-top-0' after:w-0 after:h-0.5 after:bg-hoverColor after:transition-all after:duration-300 hover:after:w-7"
+                href="#"
+                >Pages</a
+              >
+            </li>
+            <li>
+              <a
+                class="relative inline-block hover:text-hoverColor after:content-[''] after:absolute after:left-0 'after:-top-0' after:w-0 after:h-0.5 after:bg-hoverColor after:transition-all after:duration-300 hover:after:w-7"
+                href="./contact.html"
+                >Contact</a
+              >
+            </li>
+            <button
+              class="py-3 px-4 border bg-buttonColor text-white transition-all hover:border-buttonColor hover:bg-white hover:text-buttonColor rounded"
+            >
+              Get a Quote
+            </button>
+          </ul>
+          <div class="mobile-menu-icons text-3xl lg:hidden">
+            <i class="fa-solid fa-bars"></i>
+          </div>
         </div>
+      </div>
     </nav>
     <!-- Navbar End -->
 
     <!-- Portfolios Title -->
     <section
-        class="bg-FooterBg font-InterFont bg-[url('/images/portfolios.png')] bg-cover bg-center bg-no-repeat relative">
-        <!-- <div class="absolute inset-0 bg-black/30"></div> -->
-        <div class="container mx-auto text-white p-4 lg:p-0">
-            <div class="Portfolios-Title py-30 lg:flex items-center justify-between">
-                <div>
-                    <h2
-                        class="relative inline-block font-semibold text-3xl mb-8 after:content-[''] after:absolute after:left-0 after:-bottom-4 after:w-16 after:h-1 after:bg-primaryColor">
-                        Services
-                    </h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, seddo <br class="hidden lg:block">
-                        eiusmod tempor incididunt ut labore et dolore.</p>
-                </div>
-                <ul class="flex items-center gap-5 mt-5 lg:mt-0">
-                    <a class="font-semibold text-[17px] hover:text-primaryColor transition-all"
-                        href="./index.html">Home</a>
-                    <li class="text-[12px]"><i class="bi bi-chevron-double-right"></i></li>
-                    <li class="text-primaryColor font-semibold">Services</li>
-                </ul>
-            </div>
+      class="bg-FooterBg font-InterFont bg-[url('/images/portfolios.png')] bg-cover bg-center bg-no-repeat relative"
+    >
+      <!-- <div class="absolute inset-0 bg-black/30"></div> -->
+      <div class="container mx-auto text-white p-4 lg:p-0">
+        <div
+          class="Portfolios-Title py-30 lg:flex items-center justify-between"
+        >
+          <div>
+            <h2
+              class="relative inline-block font-semibold text-3xl mb-8 after:content-[''] after:absolute after:left-0 after:-bottom-4 after:w-16 after:h-1 after:bg-primaryColor"
+            >
+              Services
+            </h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, seddo
+              <br class="hidden lg:block" />
+              eiusmod tempor incididunt ut labore et dolore.
+            </p>
+          </div>
+          <ul class="flex items-center gap-5 mt-5 lg:mt-0">
+            <a
+              class="font-semibold text-[17px] hover:text-primaryColor transition-all"
+              href="./index.html"
+              >Home</a
+            >
+            <li class="text-[12px]">
+              <i class="bi bi-chevron-double-right"></i>
+            </li>
+            <li class="text-primaryColor font-semibold">Services</li>
+          </ul>
         </div>
+      </div>
     </section>
     <!-- Portfolios End -->
 
     <!-- Service Section -->
     <section class="py-20 font-InterFont">
-        <div class="container mx-auto">
-            <div class="service-title text-center p-4">
-                <h3 class="bg-primaryColor px-10 py-2 inline-block skew-x-[-25deg]">
-                    <span class="block text-[15px] text-white font-semibold skew-x-25">
-                        Services
-                    </span>
-                </h3>
-                <h2 class="lg:text-[30px] text-[20px] mt-5 text-headerFs font-semibold">OUR SERVICES</h2>
-                <p class="text-pera-fs mt-5 text-secondary">All the lorem Ipsum generators on the Internet tend to
-                    repeat predefined chunks as <br class="hidden lg:block"> necessary, making this the first true
-                    generator on
-                    the Internet.</p>
-            </div>
-            <div class="service-card grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-10 text-center">
-                <div class="card-menu">
-                    <div
-                        class="group transition-all ease-in-out hover:rounded-full relative w-10 h-10 mx-auto flex items-center justify-center text-primaryColor text-2xl rounded border border-primaryColor">
-                        1
-                        <span
-                            class="absolute top-1/2 left-full h-0.5 w-0 bg-hoverColor transition-all duration-500 group-hover:w-121.5">
-                        </span>
-                    </div>
-                    <div
-                        class="card-items mt-5 p-10 shadow-2xl bg-white flex py-8 items-center justify-center flex-col">
-                        <div class="box border-6 border-[#ddd] mt-5 'w-[50px]' overflow-hidden rounded-full">
-                            <img class="transition-transform duration-500 hover:scale-120" src="./images/service3.png"
-                                alt="service-image">
-                        </div>
-                        <h3 class="mt-5 text-[20px] font-medium text-headerFs">Business Consulting</h3>
-                        <p class="mt-5 text-[14px] text-secondary">There is now an abundance of readable dummy texts
-                            These are usually used when a text is required purely.</p>
-                        <div
-                            class="mt-5 text-white w-10 h-10 hover:bg-[#26313C] transition-all bg-primaryColor p-2 rounded-full">
-                            <i class="fa-solid fa-chevron-right"></i>
-                        </div>
-                    </div>
-                </div>
-                <div class="card-menu">
-                    <div
-                        class="group transition-all ease-in-out hover:rounded-full relative w-10 h-10 mx-auto flex items-center justify-center text-primaryColor text-2xl rounded border border-primaryColor">
-                        2
-                        <span
-                            class="absolute top-1/2 left-full h-0.5 w-0 bg-hoverColor transition-all duration-500 group-hover:w-121.75">
-                        </span>
-                    </div>
-                    <div
-                        class="card-items mt-5 p-10 shadow-2xl bg-white flex py-8 items-center justify-center flex-col">
-                        <div class="box border-6 border-[#ddd] mt-5 'w-[50px]' overflow-hidden rounded-full">
-                            <img class="transition-transform duration-500 hover:scale-120" src="./images/service.png"
-                                alt="service-image">
-                        </div>
-                        <h3 class="mt-5 text-[20px] font-medium text-headerFs">Business Consulting</h3>
-                        <p class="mt-5 text-[14px] text-secondary">There is now an abundance of readable dummy texts
-                            These are usually used when a text is required purely.</p>
-                        <div
-                            class="mt-5 text-white w-10 h-10 hover:bg-[#26313C] transition-all bg-primaryColor p-2 rounded-full">
-                            <i class="fa-solid fa-chevron-right"></i>
-                        </div>
-                    </div>
-                </div>
-                <div class="card-menu">
-                    <div
-                        class="box w-10 h-10 mx-auto flex items-center justify-center text-primaryColor text-2xl rounded border-primaryColor border">
-                        1</div>
-                    <div
-                        class="card-items mt-5 p-10 shadow-2xl bg-white flex py-8 items-center justify-center flex-col">
-                        <div class="box border-6 border-[#ddd] mt-5 'w-[50px]' overflow-hidden rounded-full">
-                            <img class="transition-transform duration-500 hover:scale-120" src="./images/service1.png"
-                                alt="service-image">
-                        </div>
-                        <h3 class="mt-5 text-[20px] font-medium text-headerFs">Graphics Design</h3>
-                        <p class="mt-5 text-[14px] text-secondary">There is now an abundance of readable dummy texts.
-                            These are usually used when a text is required purely.</p>
-                        <div
-                            class="mt-5 text-white w-10 h-10 hover:bg-[#26313C] transition-all bg-primaryColor p-2 rounded-full">
-                            <i class="fa-solid fa-chevron-right"></i>
-                        </div>
-                    </div>
-                </div>
-                <div class="card-menu">
-                    <div
-                        class="card-items mt-5 p-10 shadow-2xl bg-white flex py-8 items-center justify-center flex-col">
-                        <div class="box border-6 border-[#ddd] mt-5 'w-[50px]' overflow-hidden rounded-full">
-                            <img class="transition-transform duration-500 hover:scale-120" src="./images/service1.png"
-                                alt="service-image">
-                        </div>
-                        <h3 class="mt-5 text-[20px] font-medium text-headerFs">Graphics Design</h3>
-                        <p class="mt-5 text-[14px] text-secondary">There is now an abundance of readable dummy texts.
-                            These are usually used when a text is required purely.</p>
-                        <div
-                            class="mt-5 text-white w-10 h-10 hover:bg-[#26313C] transition-all bg-primaryColor p-2 rounded-full">
-                            <i class="fa-solid fa-chevron-right"></i>
-                        </div>
-                    </div>
-                </div>
-                <div class="card-menu">
-                    <div
-                        class="card-items mt-5 p-10 shadow-2xl bg-white flex py-8 items-center justify-center flex-col">
-                        <div class="box border-6 border-[#ddd] mt-5 'w-[50px]' overflow-hidden rounded-full">
-                            <img class="transition-transform duration-500 hover:scale-120" src="./images/service1.png"
-                                alt="service-image">
-                        </div>
-                        <h3 class="mt-5 text-[20px] font-medium text-headerFs">Graphics Design</h3>
-                        <p class="mt-5 text-[14px] text-secondary">There is now an abundance of readable dummy texts.
-                            These are usually used when a text is required purely.</p>
-                        <div
-                            class="mt-5 text-white w-10 h-10 hover:bg-[#26313C] transition-all bg-primaryColor p-2 rounded-full">
-                            <i class="fa-solid fa-chevron-right"></i>
-                        </div>
-                    </div>
-                </div>
-                <div class="card-menu">
-                    <div
-                        class="card-items mt-5 p-10 shadow-2xl bg-white flex py-8 items-center justify-center flex-col">
-                        <div class="box border-6 border-[#ddd] mt-5 'w-[50px]' overflow-hidden rounded-full">
-                            <img class="transition-transform duration-500 hover:scale-120" src="./images/service1.png"
-                                alt="service-image">
-                        </div>
-                        <h3 class="mt-5 text-[20px] font-medium text-headerFs">Graphics Design</h3>
-                        <p class="mt-5 text-[14px] text-secondary">There is now an abundance of readable dummy texts.
-                            These are usually used when a text is required purely.</p>
-                        <div
-                            class="mt-5 text-white w-10 h-10 hover:bg-[#26313C] transition-all bg-primaryColor p-2 rounded-full">
-                            <i class="fa-solid fa-chevron-right"></i>
-                        </div>
-                    </div>
-                </div>
-            </div>
+      <div class="container mx-auto">
+        <div class="service-title text-center p-4">
+          <h3 class="bg-primaryColor px-10 py-2 inline-block skew-x-[-25deg]">
+            <span class="block text-[15px] text-white font-semibold skew-x-25">
+              Services
+            </span>
+          </h3>
+          <h2
+            class="lg:text-[30px] text-[20px] mt-5 text-headerFs font-semibold"
+          >
+            OUR SERVICES
+          </h2>
+          <p class="text-pera-fs mt-5 text-secondary">
+            All the lorem Ipsum generators on the Internet tend to repeat
+            predefined chunks as <br class="hidden lg:block" />
+            necessary, making this the first true generator on the Internet.
+          </p>
         </div>
+        <div
+          class="service-card grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-10 text-center"
+        >
+          <div class="card-menu">
+            <div
+              class="group transition-all ease-in-out hover:rounded-full relative w-10 h-10 mx-auto flex items-center justify-center text-primaryColor text-2xl rounded border border-primaryColor"
+            >
+              1
+              <span
+                class="absolute top-1/2 left-full h-0.5 w-0 bg-hoverColor transition-all duration-500 group-hover:w-121.5"
+              >
+              </span>
+            </div>
+            <div
+              class="card-items mt-5 p-10 shadow-2xl bg-white flex py-8 items-center justify-center flex-col"
+            >
+              <div
+                class="box border-6 border-[#ddd] mt-5 'w-[50px]' overflow-hidden rounded-full"
+              >
+                <img
+                  class="transition-transform duration-500 hover:scale-120"
+                  src="./images/service3.png"
+                  alt="service-image"
+                />
+              </div>
+              <h3 class="mt-5 text-[20px] font-medium text-headerFs">
+                Business Consulting
+              </h3>
+              <p class="mt-5 text-[14px] text-secondary">
+                There is now an abundance of readable dummy texts These are
+                usually used when a text is required purely.
+              </p>
+              <div
+                class="mt-5 text-white w-10 h-10 hover:bg-[#26313C] transition-all bg-primaryColor p-2 rounded-full"
+              >
+                <i class="fa-solid fa-chevron-right"></i>
+              </div>
+            </div>
+          </div>
+          <div class="card-menu">
+            <div
+              class="group transition-all ease-in-out hover:rounded-full relative w-10 h-10 mx-auto flex items-center justify-center text-primaryColor text-2xl rounded border border-primaryColor"
+            >
+              2
+              <span
+                class="absolute top-1/2 left-full h-0.5 w-0 bg-hoverColor transition-all duration-500 group-hover:w-121.75"
+              >
+              </span>
+            </div>
+            <div
+              class="card-items mt-5 p-10 shadow-2xl bg-white flex py-8 items-center justify-center flex-col"
+            >
+              <div
+                class="box border-6 border-[#ddd] mt-5 'w-[50px]' overflow-hidden rounded-full"
+              >
+                <img
+                  class="transition-transform duration-500 hover:scale-120"
+                  src="./images/service.png"
+                  alt="service-image"
+                />
+              </div>
+              <h3 class="mt-5 text-[20px] font-medium text-headerFs">
+                Business Consulting
+              </h3>
+              <p class="mt-5 text-[14px] text-secondary">
+                There is now an abundance of readable dummy texts These are
+                usually used when a text is required purely.
+              </p>
+              <div
+                class="mt-5 text-white w-10 h-10 hover:bg-[#26313C] transition-all bg-primaryColor p-2 rounded-full"
+              >
+                <i class="fa-solid fa-chevron-right"></i>
+              </div>
+            </div>
+          </div>
+          <div class="card-menu">
+            <div
+              class="box w-10 h-10 mx-auto flex items-center justify-center text-primaryColor text-2xl rounded border-primaryColor border"
+            >
+              1
+            </div>
+            <div
+              class="card-items mt-5 p-10 shadow-2xl bg-white flex py-8 items-center justify-center flex-col"
+            >
+              <div
+                class="box border-6 border-[#ddd] mt-5 'w-[50px]' overflow-hidden rounded-full"
+              >
+                <img
+                  class="transition-transform duration-500 hover:scale-120"
+                  src="./images/service1.png"
+                  alt="service-image"
+                />
+              </div>
+              <h3 class="mt-5 text-[20px] font-medium text-headerFs">
+                Graphics Design
+              </h3>
+              <p class="mt-5 text-[14px] text-secondary">
+                There is now an abundance of readable dummy texts. These are
+                usually used when a text is required purely.
+              </p>
+              <div
+                class="mt-5 text-white w-10 h-10 hover:bg-[#26313C] transition-all bg-primaryColor p-2 rounded-full"
+              >
+                <i class="fa-solid fa-chevron-right"></i>
+              </div>
+            </div>
+          </div>
+          <div class="card-menu">
+            <div
+              class="card-items mt-5 p-10 shadow-2xl bg-white flex py-8 items-center justify-center flex-col"
+            >
+              <div
+                class="box border-6 border-[#ddd] mt-5 'w-[50px]' overflow-hidden rounded-full"
+              >
+                <img
+                  class="transition-transform duration-500 hover:scale-120"
+                  src="./images/service1.png"
+                  alt="service-image"
+                />
+              </div>
+              <h3 class="mt-5 text-[20px] font-medium text-headerFs">
+                Graphics Design
+              </h3>
+              <p class="mt-5 text-[14px] text-secondary">
+                There is now an abundance of readable dummy texts. These are
+                usually used when a text is required purely.
+              </p>
+              <div
+                class="mt-5 text-white w-10 h-10 hover:bg-[#26313C] transition-all bg-primaryColor p-2 rounded-full"
+              >
+                <i class="fa-solid fa-chevron-right"></i>
+              </div>
+            </div>
+          </div>
+          <div class="card-menu">
+            <div
+              class="card-items mt-5 p-10 shadow-2xl bg-white flex py-8 items-center justify-center flex-col"
+            >
+              <div
+                class="box border-6 border-[#ddd] mt-5 'w-[50px]' overflow-hidden rounded-full"
+              >
+                <img
+                  class="transition-transform duration-500 hover:scale-120"
+                  src="./images/service1.png"
+                  alt="service-image"
+                />
+              </div>
+              <h3 class="mt-5 text-[20px] font-medium text-headerFs">
+                Graphics Design
+              </h3>
+              <p class="mt-5 text-[14px] text-secondary">
+                There is now an abundance of readable dummy texts. These are
+                usually used when a text is required purely.
+              </p>
+              <div
+                class="mt-5 text-white w-10 h-10 hover:bg-[#26313C] transition-all bg-primaryColor p-2 rounded-full"
+              >
+                <i class="fa-solid fa-chevron-right"></i>
+              </div>
+            </div>
+          </div>
+          <div class="card-menu">
+            <div
+              class="card-items mt-5 p-10 shadow-2xl bg-white flex py-8 items-center justify-center flex-col"
+            >
+              <div
+                class="box border-6 border-[#ddd] mt-5 'w-[50px]' overflow-hidden rounded-full"
+              >
+                <img
+                  class="transition-transform duration-500 hover:scale-120"
+                  src="./images/service1.png"
+                  alt="service-image"
+                />
+              </div>
+              <h3 class="mt-5 text-[20px] font-medium text-headerFs">
+                Graphics Design
+              </h3>
+              <p class="mt-5 text-[14px] text-secondary">
+                There is now an abundance of readable dummy texts. These are
+                usually used when a text is required purely.
+              </p>
+              <div
+                class="mt-5 text-white w-10 h-10 hover:bg-[#26313C] transition-all bg-primaryColor p-2 rounded-full"
+              >
+                <i class="fa-solid fa-chevron-right"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
     <!-- Service End -->
 
     <!-- Testimonials Section -->
     <div class="bg-[#26313C] p-6 text-white font-InterFont">
-        <div class="max-w-7xl mx-auto">
-            <div class="swiper mimSwiper relative">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <div class="lg:p-10 p-4 lg:flex items-center lg:gap-20 gap-5">
-                            <div class="text-center">
-                                <img class="rounded-full mx-auto" src="./images/avator.png" alt="avator-image">
-                                <h3 class="text-[22px] font-semibold">Poppy Jnay</h3>
-                                <p class="mt-1">Digital Marketer</p>
-                            </div>
-                            <ul
-                                class="bg-[#676c70c4] mt-5 p-4 rounded-4xl flex lg:flex-col justify-center lg:gap-2 gap-4 shadow-2xl">
-                                <li><i class="bi bi-facebook"></i></li>
-                                <li><i class="bi bi-twitter"></i></li>
-                                <li><i class="bi bi-linkedin"></i></li>
-                                <li><i class="bi bi-globe2"></i></li>
-                            </ul>
-                            <div class="lead leading-6.5 mt-5">
-                                <p class="font-semibold">We have a number of different teams within our agency that
-                                    specialise in different <br class="hidden lg:block">
-                                    areas
-                                    of business so you can be sure that you won't receive a generic service and <br
-                                        class="hidden lg:block">
-                                    although we
-                                    boast a years and years of service.</p>
-                                <ul class="flex items-center gap-2 mt-4 text-amber-400">
-                                    <li><i class="bi bi-star-fill"></i></li>
-                                    <li><i class="bi bi-star-fill"></i></li>
-                                    <li><i class="bi bi-star-fill"></i></li>
-                                    <li><i class="bi bi-star-fill"></i></li>
-                                    <li><i class="bi bi-star-fill"></i></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="lg:p-10 p-4 lg:flex items-center lg:gap-20 gap-5">
-                            <div class="text-center">
-                                <img class="rounded-full mx-auto" src="./images/avator2.png" alt="avator-image">
-                                <h3 class="text-[22px] font-semibold">Poppy Jnay</h3>
-                                <p class="mt-1">Digital Marketer</p>
-                            </div>
-                            <ul
-                                class="bg-[#676c70c4] mt-5 p-4 rounded-4xl flex lg:flex-col justify-center lg:gap-2 gap-4 shadow-2xl">
-                                <li><i class="bi bi-facebook"></i></li>
-                                <li><i class="bi bi-twitter"></i></li>
-                                <li><i class="bi bi-linkedin"></i></li>
-                                <li><i class="bi bi-globe2"></i></li>
-                            </ul>
-                            <div class="lead leading-6.5 mt-5">
-                                <p class="font-semibold">We have a number of different teams within our agency that
-                                    specialise in different <br class="hidden lg:block">
-                                    areas
-                                    of business so you can be sure that you won't receive a generic service and <br
-                                        class="hidden lg:block">
-                                    although we
-                                    boast a years and years of service.</p>
-                                <ul class="flex items-center gap-2 mt-4 text-amber-400">
-                                    <li><i class="bi bi-star-fill"></i></li>
-                                    <li><i class="bi bi-star-fill"></i></li>
-                                    <li><i class="bi bi-star-fill"></i></li>
-                                    <li><i class="bi bi-star-fill"></i></li>
-                                    <li><i class="bi bi-star-fill"></i></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="lg:p-10 p-4 lg:flex items-center lg:gap-20 gap-5">
-                            <div class="text-center">
-                                <img class="rounded-full mx-auto" src="./images/avator3.png" alt="avator-image">
-                                <h3 class="text-[22px] font-semibold">Poppy Jnay</h3>
-                                <p class="mt-1">Digital Marketer</p>
-                            </div>
-                            <ul
-                                class="bg-[#676c70c4] mt-5 p-4 rounded-4xl flex lg:flex-col justify-center lg:gap-2 gap-4 shadow-2xl">
-                                <li><i class="bi bi-facebook"></i></li>
-                                <li><i class="bi bi-twitter"></i></li>
-                                <li><i class="bi bi-linkedin"></i></li>
-                                <li><i class="bi bi-globe2"></i></li>
-                            </ul>
-                            <div class="lead leading-6.5 mt-5">
-                                <p class="font-semibold">We have a number of different teams within our agency that
-                                    specialise in different <br class="hidden lg:block">
-                                    areas
-                                    of business so you can be sure that you won't receive a generic service and <br
-                                        class="hidden lg:block">
-                                    although we
-                                    boast a years and years of service.</p>
-                                <ul class="flex items-center gap-2 mt-4 text-amber-400">
-                                    <li><i class="bi bi-star-fill"></i></li>
-                                    <li><i class="bi bi-star-fill"></i></li>
-                                    <li><i class="bi bi-star-fill"></i></li>
-                                    <li><i class="bi bi-star-fill"></i></li>
-                                    <li><i class="bi bi-star-fill"></i></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
+      <div class="max-w-7xl mx-auto">
+        <div class="swiper mimSwiper relative">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="lg:p-10 p-4 lg:flex items-center lg:gap-20 gap-5">
+                <div class="text-center">
+                  <img
+                    class="rounded-full mx-auto"
+                    src="./images/avator.png"
+                    alt="avator-image"
+                  />
+                  <h3 class="text-[22px] font-semibold">Poppy Jnay</h3>
+                  <p class="mt-1">Digital Marketer</p>
                 </div>
-                <div class="mim-pagination"></div>
+                <ul
+                  class="bg-[#676c70c4] mt-5 p-4 rounded-4xl flex lg:flex-col justify-center lg:gap-2 gap-4 shadow-2xl"
+                >
+                  <li><i class="bi bi-facebook"></i></li>
+                  <li><i class="bi bi-twitter"></i></li>
+                  <li><i class="bi bi-linkedin"></i></li>
+                  <li><i class="bi bi-globe2"></i></li>
+                </ul>
+                <div class="lead leading-6.5 mt-5">
+                  <p class="font-semibold">
+                    We have a number of different teams within our agency that
+                    specialise in different <br class="hidden lg:block" />
+                    areas of business so you can be sure that you won't receive
+                    a generic service and <br class="hidden lg:block" />
+                    although we boast a years and years of service.
+                  </p>
+                  <ul class="flex items-center gap-2 mt-4 text-amber-400">
+                    <li><i class="bi bi-star-fill"></i></li>
+                    <li><i class="bi bi-star-fill"></i></li>
+                    <li><i class="bi bi-star-fill"></i></li>
+                    <li><i class="bi bi-star-fill"></i></li>
+                    <li><i class="bi bi-star-fill"></i></li>
+                  </ul>
+                </div>
+              </div>
             </div>
+            <div class="swiper-slide">
+              <div class="lg:p-10 p-4 lg:flex items-center lg:gap-20 gap-5">
+                <div class="text-center">
+                  <img
+                    class="rounded-full mx-auto"
+                    src="./images/avator2.png"
+                    alt="avator-image"
+                  />
+                  <h3 class="text-[22px] font-semibold">Poppy Jnay</h3>
+                  <p class="mt-1">Digital Marketer</p>
+                </div>
+                <ul
+                  class="bg-[#676c70c4] mt-5 p-4 rounded-4xl flex lg:flex-col justify-center lg:gap-2 gap-4 shadow-2xl"
+                >
+                  <li><i class="bi bi-facebook"></i></li>
+                  <li><i class="bi bi-twitter"></i></li>
+                  <li><i class="bi bi-linkedin"></i></li>
+                  <li><i class="bi bi-globe2"></i></li>
+                </ul>
+                <div class="lead leading-6.5 mt-5">
+                  <p class="font-semibold">
+                    We have a number of different teams within our agency that
+                    specialise in different <br class="hidden lg:block" />
+                    areas of business so you can be sure that you won't receive
+                    a generic service and <br class="hidden lg:block" />
+                    although we boast a years and years of service.
+                  </p>
+                  <ul class="flex items-center gap-2 mt-4 text-amber-400">
+                    <li><i class="bi bi-star-fill"></i></li>
+                    <li><i class="bi bi-star-fill"></i></li>
+                    <li><i class="bi bi-star-fill"></i></li>
+                    <li><i class="bi bi-star-fill"></i></li>
+                    <li><i class="bi bi-star-fill"></i></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="lg:p-10 p-4 lg:flex items-center lg:gap-20 gap-5">
+                <div class="text-center">
+                  <img
+                    class="rounded-full mx-auto"
+                    src="./images/avator3.png"
+                    alt="avator-image"
+                  />
+                  <h3 class="text-[22px] font-semibold">Poppy Jnay</h3>
+                  <p class="mt-1">Digital Marketer</p>
+                </div>
+                <ul
+                  class="bg-[#676c70c4] mt-5 p-4 rounded-4xl flex lg:flex-col justify-center lg:gap-2 gap-4 shadow-2xl"
+                >
+                  <li><i class="bi bi-facebook"></i></li>
+                  <li><i class="bi bi-twitter"></i></li>
+                  <li><i class="bi bi-linkedin"></i></li>
+                  <li><i class="bi bi-globe2"></i></li>
+                </ul>
+                <div class="lead leading-6.5 mt-5">
+                  <p class="font-semibold">
+                    We have a number of different teams within our agency that
+                    specialise in different <br class="hidden lg:block" />
+                    areas of business so you can be sure that you won't receive
+                    a generic service and <br class="hidden lg:block" />
+                    although we boast a years and years of service.
+                  </p>
+                  <ul class="flex items-center gap-2 mt-4 text-amber-400">
+                    <li><i class="bi bi-star-fill"></i></li>
+                    <li><i class="bi bi-star-fill"></i></li>
+                    <li><i class="bi bi-star-fill"></i></li>
+                    <li><i class="bi bi-star-fill"></i></li>
+                    <li><i class="bi bi-star-fill"></i></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="mim-pagination"></div>
         </div>
+      </div>
     </div>
     <!-- Testimonials End -->
 
-
     <!-- Subscribe Section -->
-    <section class="py-10 bg-primaryBgColor font-InterFont"
-        style="background-image: url(./image/subscribe-bg.4015bddb.jpg); background-repeat: no-repeat; object-fit: cover; background-size: cover; background-position: top;">
-        <div class="container mx-auto p-4 lg:p-0">
-            <h2 class="text-[18px] text-headerFs font-bold">Subscribe & stay updated</h2>
-            <p class="text-pera-fs mt-2 text-secondary">Posuere nam natoque nec rhoncus malesuad phasel ante.</p>
-            <div class="flex items-center gap-4 mt-5 flex-wrap">
-                <input class="bg-white focus:outline-none py-3  px-3 w-100" placeholder="Your email Adress" type="text">
-                <button
-                    class="py-3 px-6 bg-primaryColor hover:bg-transparent transition border hover:text-hoverColor border-transparent hover:border-hoverColor font-medium text-white">Subscribe
-                    Now</button>
-            </div>
+    <section
+      class="py-10 bg-primaryBgColor font-InterFont"
+      style="
+        background-image: url(./image/subscribe-bg.4015bddb.jpg);
+        background-repeat: no-repeat;
+        object-fit: cover;
+        background-size: cover;
+        background-position: top;
+      "
+    >
+      <div class="container mx-auto p-4 lg:p-0">
+        <h2 class="text-[18px] text-headerFs font-bold">
+          Subscribe & stay updated
+        </h2>
+        <p class="text-pera-fs mt-2 text-secondary">
+          Posuere nam natoque nec rhoncus malesuad phasel ante.
+        </p>
+        <div class="flex items-center gap-4 mt-5 flex-wrap">
+          <input
+            class="bg-white focus:outline-none py-3 px-3 w-100"
+            placeholder="Your email Adress"
+            type="text"
+          />
+          <button
+            class="py-3 px-6 bg-primaryColor hover:bg-transparent transition border hover:text-hoverColor border-transparent hover:border-hoverColor font-medium text-white"
+          >
+            Subscribe Now
+          </button>
         </div>
+      </div>
     </section>
     <!-- Subscribe End -->
 
     <!-- Footer Section -->
     <footer class="text-[#cccccc] bg-FooterBg py-16 px-6 font-InterFont">
-        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
-
-            <div>
-                <h2 class="mb-6"><img src="./images/footer1.png" alt="footer-image">
-                </h2>
-                <p class="leading-relaxed mb-8">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore
-                    et dolore magna.
-                </p>
-                <div class="flex items-center border border-[#ffffff3d] p-4 rounded-sm w-fit">
-                    <div
-                        class="bg-primaryColor p-3 w-10 h-10 flex items-center justify-center rounded-full mr-4 text-white">
-                        <i class="fa-regular fa-headphones"></i>
-                    </div>
-                    <div>
-                        <p class="text-xs uppercase text-[#f5f5f5db]">Talk To Our Support</p>
-                        <p class="text-white font-semibold mt-1">1-322-344-888</p>
-                    </div>
-                </div>
+      <div
+        class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12"
+      >
+        <div>
+          <h2 class="mb-6">
+            <img src="./images/footer1.png" alt="footer-image" />
+          </h2>
+          <p class="leading-relaxed mb-8">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit sed do
+            eiusmod tempor incididunt ut labore et dolore magna.
+          </p>
+          <div
+            class="flex items-center border border-[#ffffff3d] p-4 rounded-sm w-fit"
+          >
+            <div
+              class="bg-primaryColor p-3 w-10 h-10 flex items-center justify-center rounded-full mr-4 text-white"
+            >
+              <i class="fa-regular fa-headphones"></i>
             </div>
-
             <div>
-                <h3 class="text-[20px] font-bold text-white mb-6 relative inline-block">
-                    Quick Links
-                    <span class="block border w-10 bg-white mt-2"></span>
-                </h3>
-                <ul class="space-y-4">
-                    <li><a href="#" class="hover:text-hoverColor flex items-center transition-colors">
-                            <span class="mr-2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                    fill="currentColor" class="bi bi-chevron-double-right" viewBox="0 0 20 20">
-                                    <path fill-rule="evenodd"
-                                        d="M3.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L9.293 8 3.646 2.354a.5.5 0 0 1 0-.708" />
-                                    <path fill-rule="evenodd"
-                                        d="M7.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L13.293 8 7.646 2.354a.5.5 0 0 1 0-.708" />
-                                </svg></span> About us
-                        </a></li>
-                    <li><a href="#" class="hover:text-hoverColor flex items-center transition-colors">
-                            <span class="mr-2 text-sm"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                    fill="currentColor" class="bi bi-chevron-double-right" viewBox="0 0 20 20">
-                                    <path fill-rule="evenodd"
-                                        d="M3.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L9.293 8 3.646 2.354a.5.5 0 0 1 0-.708" />
-                                    <path fill-rule="evenodd"
-                                        d="M7.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L13.293 8 7.646 2.354a.5.5 0 0 1 0-.708" />
-                                </svg></span> Our Services
-                        </a></li>
-                    <li><a href="#" class="hover:text-hoverColor flex items-center transition-colors">
-                            <span class="mr-2 text-sm"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                    fill="currentColor" class="bi bi-chevron-double-right" viewBox="0 0 20 20">
-                                    <path fill-rule="evenodd"
-                                        d="M3.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L9.293 8 3.646 2.354a.5.5 0 0 1 0-.708" />
-                                    <path fill-rule="evenodd"
-                                        d="M7.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L13.293 8 7.646 2.354a.5.5 0 0 1 0-.708" />
-                                </svg></span> Creative Portfolio
-                        </a></li>
-                    <li><a href="#" class="hover:text-hoverColor flex items-center transition-colors">
-                            <span class="mr-2 text-sm"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                    fill="currentColor" class="bi bi-chevron-double-right" viewBox="0 0 20 20">
-                                    <path fill-rule="evenodd"
-                                        d="M3.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L9.293 8 3.646 2.354a.5.5 0 0 1 0-.708" />
-                                    <path fill-rule="evenodd"
-                                        d="M7.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L13.293 8 7.646 2.354a.5.5 0 0 1 0-.708" />
-                                </svg></span> Our Pricing
-                        </a></li>
-                    <li><a href="#" class="hover:text-hoverColor text-[#cccccc] flex items-center transition-colors">
-                            <span class="mr-2 text-sm"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                    fill="currentColor" class="bi bi-chevron-double-right" viewBox="0 0 20 20">
-                                    <path fill-rule="evenodd"
-                                        d="M3.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L9.293 8 3.646 2.354a.5.5 0 0 1 0-.708" />
-                                    <path fill-rule="evenodd"
-                                        d="M7.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L13.293 8 7.646 2.354a.5.5 0 0 1 0-.708" />
-                                </svg></span> Contact us
-                        </a></li>
-                </ul>
+              <p class="text-xs uppercase text-[#f5f5f5db]">
+                Talk To Our Support
+              </p>
+              <p class="text-white font-semibold mt-1">1-322-344-888</p>
             </div>
-
-            <div>
-                <h3 class="text-[20px] font-bold text-white mb-6 relative inline-block">
-                    Latest News
-                    <span class="block border w-10 bg-white mt-2"></span>
-                </h3>
-                <div class="space-y-6">
-                    <div class="flex gap-4">
-                        <img src="./images/service1.png" alt="News"
-                            class="w-20 h-20 object-cover rounded-sm border p-1.5 border-[#ffffff3d]">
-                        <div>
-                            <h4
-                                class="text-[#cccccc] text-sm font-semibold leading-snug hover:text-hoverColor cursor-pointer transition-colors">
-                                Define World Best IT Solution Technology
-                            </h4>
-                            <p class="text-sm mt-2 flex text-[#cccccc] items-center">
-                                <span class="mr-1">🕒</span> 24th March 2020
-                            </p>
-                        </div>
-                    </div>
-                    <div class="flex gap-4">
-                        <img src="./images/service1.png" alt="News"
-                            class="w-20 h-20 object-cover rounded-sm border p-1.5 border-[#ffffff3d]">
-                        <div>
-                            <h4
-                                class="text-[#cccccc] text-sm font-semibold leading-snug hover:text-hoverColor cursor-pointer transition-colors">
-                                Define World Best IT Solution Technology
-                            </h4>
-                            <p class="text-sm text-[#cccccc] mt-2 flex items-center">
-                                <span class="mr-1 text-hoverColor">🕒</span> 24th March 2020
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div>
-                <h3 class="text-[20px] font-bold text-white mb-6 relative inline-block">
-                    Contact
-                    <span class="block border w-10 bg-white mt-2"></span>
-                </h3>
-                <ul class="space-y-5">
-                    <li class="flex items-start">
-                        <span class="bg-hovertext-hoverColor p-1.5 rounded-sm mr-3 mt-1 text-white">
-                            <svg class="h-4 w-4" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd"
-                                    d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z"
-                                    clip-rule="evenodd"></path>
-                            </svg>
-                        </span>
-                        <span>28/A Street, The king city, USA</span>
-                    </li>
-                    <li class="flex items-center">
-                        <span class="bg-hovertext-hoverColor p-1.5 rounded-sm mr-3 text-white">
-                            <svg class="h-4 w-4" fill="currentColor" viewBox="0 0 20 20">
-                                <path
-                                    d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 004.87 4.87l.774-1.548a1 1 0 011.06-.539l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z">
-                                </path>
-                            </svg>
-                        </span>
-                        <span>+0123456789</span>
-                    </li>
-                    <li class="flex items-center">
-                        <span class="bg-hovertext-hoverColor p-1.5 rounded-sm mr-3 text-white">
-                            <svg class="h-4 w-4" fill="currentColor" viewBox="0 0 20 20">
-                                <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path>
-                                <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path>
-                            </svg>
-                        </span>
-                        <span>info@example.com</span>
-                    </li>
-                </ul>
-
-                <div class="flex gap-3 mt-8">
-                    <a href="#"
-                        class="w-9 h-9 rounded-full border border-white flex items-center justify-center hover:bg-hoverColor hover:text-whiteColor transition text-white"><i
-                            class="fa-brands fa-facebook-f"></i></a>
-                    <a href="#"
-                        class="w-9 h-9 rounded-full border border-white flex items-center justify-center hover:bg-hoverColor hover:text-whiteColor transition text-white"><i
-                            class="fa-brands fa-twitter"></i></a>
-                    <a href="#"
-                        class="w-9 h-9 rounded-full border border-white flex items-center justify-center hover:bg-hoverColor hover:text-whiteColor transition text-white"><i
-                            class="fa-brands fa-linkedin-in"></i></a>
-                    <a href="#"
-                        class="w-9 h-9 rounded-full border border-white flex items-center justify-center hover:bg-hoverColor hover:text-whiteColor transition text-white"><i
-                            class="fa-brands fa-instagram"></i></a>
-                </div>
-            </div>
-
+          </div>
         </div>
+
+        <div>
+          <h3
+            class="text-[20px] font-bold text-white mb-6 relative inline-block"
+          >
+            Quick Links
+            <span class="block border w-10 bg-white mt-2"></span>
+          </h3>
+          <ul class="space-y-4">
+            <li>
+              <a
+                href="#"
+                class="hover:text-hoverColor flex items-center transition-colors"
+              >
+                <span class="mr-2"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-chevron-double-right"
+                    viewBox="0 0 20 20"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M3.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L9.293 8 3.646 2.354a.5.5 0 0 1 0-.708"
+                    />
+                    <path
+                      fill-rule="evenodd"
+                      d="M7.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L13.293 8 7.646 2.354a.5.5 0 0 1 0-.708"
+                    /></svg
+                ></span>
+                About us
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                class="hover:text-hoverColor flex items-center transition-colors"
+              >
+                <span class="mr-2 text-sm"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-chevron-double-right"
+                    viewBox="0 0 20 20"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M3.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L9.293 8 3.646 2.354a.5.5 0 0 1 0-.708"
+                    />
+                    <path
+                      fill-rule="evenodd"
+                      d="M7.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L13.293 8 7.646 2.354a.5.5 0 0 1 0-.708"
+                    /></svg
+                ></span>
+                Our Services
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                class="hover:text-hoverColor flex items-center transition-colors"
+              >
+                <span class="mr-2 text-sm"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-chevron-double-right"
+                    viewBox="0 0 20 20"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M3.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L9.293 8 3.646 2.354a.5.5 0 0 1 0-.708"
+                    />
+                    <path
+                      fill-rule="evenodd"
+                      d="M7.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L13.293 8 7.646 2.354a.5.5 0 0 1 0-.708"
+                    /></svg
+                ></span>
+                Creative Portfolio
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                class="hover:text-hoverColor flex items-center transition-colors"
+              >
+                <span class="mr-2 text-sm"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-chevron-double-right"
+                    viewBox="0 0 20 20"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M3.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L9.293 8 3.646 2.354a.5.5 0 0 1 0-.708"
+                    />
+                    <path
+                      fill-rule="evenodd"
+                      d="M7.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L13.293 8 7.646 2.354a.5.5 0 0 1 0-.708"
+                    /></svg
+                ></span>
+                Our Pricing
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                class="hover:text-hoverColor text-[#cccccc] flex items-center transition-colors"
+              >
+                <span class="mr-2 text-sm"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-chevron-double-right"
+                    viewBox="0 0 20 20"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M3.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L9.293 8 3.646 2.354a.5.5 0 0 1 0-.708"
+                    />
+                    <path
+                      fill-rule="evenodd"
+                      d="M7.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L13.293 8 7.646 2.354a.5.5 0 0 1 0-.708"
+                    /></svg
+                ></span>
+                Contact us
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <h3
+            class="text-[20px] font-bold text-white mb-6 relative inline-block"
+          >
+            Latest News
+            <span class="block border w-10 bg-white mt-2"></span>
+          </h3>
+          <div class="space-y-6">
+            <div class="flex gap-4">
+              <img
+                src="./images/service1.png"
+                alt="News"
+                class="w-20 h-20 object-cover rounded-sm border p-1.5 border-[#ffffff3d]"
+              />
+              <div>
+                <h4
+                  class="text-[#cccccc] text-sm font-semibold leading-snug hover:text-hoverColor cursor-pointer transition-colors"
+                >
+                  Define World Best IT Solution Technology
+                </h4>
+                <p class="text-sm mt-2 flex text-[#cccccc] items-center">
+                  <span class="mr-1">🕒</span> 24th March 2020
+                </p>
+              </div>
+            </div>
+            <div class="flex gap-4">
+              <img
+                src="./images/service1.png"
+                alt="News"
+                class="w-20 h-20 object-cover rounded-sm border p-1.5 border-[#ffffff3d]"
+              />
+              <div>
+                <h4
+                  class="text-[#cccccc] text-sm font-semibold leading-snug hover:text-hoverColor cursor-pointer transition-colors"
+                >
+                  Define World Best IT Solution Technology
+                </h4>
+                <p class="text-sm text-[#cccccc] mt-2 flex items-center">
+                  <span class="mr-1 text-hoverColor">🕒</span> 24th March 2020
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <h3
+            class="text-[20px] font-bold text-white mb-6 relative inline-block"
+          >
+            Contact
+            <span class="block border w-10 bg-white mt-2"></span>
+          </h3>
+          <ul class="space-y-5">
+            <li class="flex items-start">
+              <span
+                class="bg-hovertext-hoverColor p-1.5 rounded-sm mr-3 mt-1 text-white"
+              >
+                <svg class="h-4 w-4" fill="currentColor" viewBox="0 0 20 20">
+                  <path
+                    fill-rule="evenodd"
+                    d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+              </span>
+              <span>28/A Street, The king city, USA</span>
+            </li>
+            <li class="flex items-center">
+              <span
+                class="bg-hovertext-hoverColor p-1.5 rounded-sm mr-3 text-white"
+              >
+                <svg class="h-4 w-4" fill="currentColor" viewBox="0 0 20 20">
+                  <path
+                    d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 004.87 4.87l.774-1.548a1 1 0 011.06-.539l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"
+                  ></path>
+                </svg>
+              </span>
+              <span>+0123456789</span>
+            </li>
+            <li class="flex items-center">
+              <span
+                class="bg-hovertext-hoverColor p-1.5 rounded-sm mr-3 text-white"
+              >
+                <svg class="h-4 w-4" fill="currentColor" viewBox="0 0 20 20">
+                  <path
+                    d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"
+                  ></path>
+                  <path
+                    d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"
+                  ></path>
+                </svg>
+              </span>
+              <span>info@example.com</span>
+            </li>
+          </ul>
+
+          <div class="flex gap-3 mt-8">
+            <a
+              href="#"
+              class="w-9 h-9 rounded-full border border-white flex items-center justify-center hover:bg-hoverColor hover:text-whiteColor transition text-white"
+              ><i class="fa-brands fa-facebook-f"></i
+            ></a>
+            <a
+              href="#"
+              class="w-9 h-9 rounded-full border border-white flex items-center justify-center hover:bg-hoverColor hover:text-whiteColor transition text-white"
+              ><i class="fa-brands fa-twitter"></i
+            ></a>
+            <a
+              href="#"
+              class="w-9 h-9 rounded-full border border-white flex items-center justify-center hover:bg-hoverColor hover:text-whiteColor transition text-white"
+              ><i class="fa-brands fa-linkedin-in"></i
+            ></a>
+            <a
+              href="#"
+              class="w-9 h-9 rounded-full border border-white flex items-center justify-center hover:bg-hoverColor hover:text-whiteColor transition text-white"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+          </div>
+        </div>
+      </div>
     </footer>
     <!-- Footer End -->
 
@@ -573,109 +887,105 @@
 
     <!-- Testimonials Script -->
     <script>
-        const mimSwiper = new Swiper(".mimSwiper", {
-            slidesPerView: 1,
-            loop: true,
+      const mimSwiper = new Swiper(".mimSwiper", {
+        slidesPerView: 1,
+        loop: true,
 
-            pagination: {
-                el: ".mim-pagination",
-                clickable: true,
-            },
-        });
-
+        pagination: {
+          el: ".mim-pagination",
+          clickable: true,
+        },
+      });
     </script>
-
 
     <!-- Swiper.js Link -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
-        var swiper = new Swiper(".blogSwiper", {
-            loop: true,
-            spaceBetween: 30,
+      var swiper = new Swiper(".blogSwiper", {
+        loop: true,
+        spaceBetween: 30,
 
-            navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
-            },
-            autoplay: {
-                delay: 3000,
-                disableOnInteraction: false,
-            },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        autoplay: {
+          delay: 3000,
+          disableOnInteraction: false,
+        },
 
-            breakpoints: {
-                0: {
-                    slidesPerView: 1,
-                },
+        breakpoints: {
+          0: {
+            slidesPerView: 1,
+          },
 
-                640: {
-                    slidesPerView: 2,
-                },
+          640: {
+            slidesPerView: 2,
+          },
 
-                1024: {
-                    slidesPerView: 3,
-                },
-            },
-        });
+          1024: {
+            slidesPerView: 3,
+          },
+        },
+      });
     </script>
 
     <!-- logo link script -->
     <script>
-        var swiper = new Swiper(".mySwiper", {
-            loop: true,
-            spaceBetween: 30,
+      var swiper = new Swiper(".mySwiper", {
+        loop: true,
+        spaceBetween: 30,
 
-            navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
-            },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
 
-            autoplay: {
-                delay: 2500,
-                disableOnInteraction: false,
-            },
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
 
-            breakpoints: {
-                0: {
-                    slidesPerView: 1,
-                },
+        breakpoints: {
+          0: {
+            slidesPerView: 1,
+          },
 
-                640: {
-                    slidesPerView: 2,
-                },
+          640: {
+            slidesPerView: 2,
+          },
 
-                768: {
-                    slidesPerView: 3,
-                },
+          768: {
+            slidesPerView: 3,
+          },
 
-                1024: {
-                    slidesPerView: 4,
-                },
-            },
-        });
+          1024: {
+            slidesPerView: 4,
+          },
+        },
+      });
     </script>
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
-        var swiper = new Swiper(".heroSwiper", {
-            loop: true,
+      var swiper = new Swiper(".heroSwiper", {
+        loop: true,
 
-            // autoplay: {
-            //     delay: 3000,
-            //     disableOnInteraction: false,
-            // },
+        // autoplay: {
+        //     delay: 3000,
+        //     disableOnInteraction: false,
+        // },
 
-            pagination: {
-                el: ".swiper-pagination",
-                clickable: true,
-            },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
 
-            navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
-            },
-        });
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
     </script>
-
-</body>
-
+  </body>
 </html>
