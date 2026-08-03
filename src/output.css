@@ -1446,12 +1446,6 @@
       top: 0;
     }
   }
-  .after\:-bottom-1 {
-    &::after {
-      content: var(--tw-content);
-      bottom: calc(var(--spacing) * -1);
-    }
-  }
   .after\:-bottom-4 {
     &::after {
       content: var(--tw-content);
@@ -1492,12 +1486,6 @@
     &::after {
       content: var(--tw-content);
       background-color: var(--color-hoverColor);
-    }
-  }
-  .after\:bg-primaryColor {
-    &::after {
-      content: var(--tw-content);
-      background-color: var(--color-primaryColor);
     }
   }
   .after\:text-sm\! {
