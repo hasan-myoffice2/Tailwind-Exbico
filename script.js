@@ -36,14 +36,16 @@ function counter(id, target) {
   }, 30);
 }
 
-const menuBtn = document.getElementById("menuBtn");
-const mobileMenu = document.getElementById("mobileMenu");
-const closeMenu = document.getElementById("closeMenu");
 
-menuBtn.addEventListener("click", function () {
-  mobileMenu.classList.add("active");
+// Open Menu
+menuIcon.addEventListener('click', () => {
+  mobileMenu.classList.remove('translate-x-full');
+  mobileMenu.classList.add('translate-x-0');
 });
 
-closeMenu.addEventListener("click", function () {
-  mobileMenu.classList.remove("active");
+
+// Close Menu
+closeMenu.addEventListener('click', () => {
+  mobileMenu.classList.remove('translate-x-0');
+  mobileMenu.classList.add('translate-x-full');
 });

@@ -155,9 +155,120 @@
             Get a Quote
           </button>
         </ul>
-        <div class="mobile-menu-icons text-3xl lg:hidden">
-          <i class="fa-solid fa-bars"></i>
+        <!-- mobile icons -->
+        <div class="mobile-menu-icons text-3xl lg:hidden cursor-pointer">
+          <i id="menuIcon" class="fa-solid fa-bars"></i>
         </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobileMenu"
+          class="fixed top-0 right-0 w-[280px] h-screen bg-white z-[999] shadow-2xl translate-x-full transition-transform duration-500 lg:hidden overflow-y-auto">
+
+          <!-- Close Button -->
+          <div class="flex justify-end p-5">
+            <button id="closeMenu" class="text-2xl text-peraColor">
+              <i class="fa-solid fa-xmark"></i>
+            </button>
+          </div>
+
+          <!-- Mobile Navigation -->
+          <ul class="flex flex-col px-6 gap-2 font-semibold text-peraColor">
+
+            <li>
+              <a href="#" class="block py-3 border-b">
+                Home
+              </a>
+            </li>
+
+            <li>
+              <a href="./service.html" class="block py-3 border-b">
+                Service
+              </a>
+            </li>
+
+            <!-- Portfolio -->
+            <li>
+              <button id="portfolioBtn" class="w-full flex justify-between items-center py-3 border-b">
+                Portfolio
+                <i id="portfolioIcon" class="fa-solid fa-chevron-down text-sm"></i>
+              </button>
+
+              <ul id="portfolioMenu" class="hidden pl-4">
+                <li>
+                  <a href="./portfolios.html" class="block py-3">
+                    Portfolios
+                  </a>
+                </li>
+
+                <li>
+                  <a href="./singPortfolios.html" class="block py-3">
+                    Single Portfolios
+                  </a>
+                </li>
+              </ul>
+            </li>
+
+            <!-- Blogs -->
+            <li>
+              <button id="blogsBtn" class="w-full flex justify-between items-center py-3 border-b">
+                Blogs
+                <i id="blogsIcon" class="fa-solid fa-chevron-down text-sm"></i>
+              </button>
+
+              <ul id="blogsMenu" class="hidden pl-4">
+                <li>
+                  <a href="./blogArchive.html" class="block py-3">
+                    Blogs Archive
+                  </a>
+                </li>
+
+                <li>
+                  <a href="./blogSide.html" class="block py-3">
+                    Blog With Sidebar
+                  </a>
+                </li>
+
+                <li>
+                  <a href="./BlogSingle.html" class="block py-3">
+                    Blog Single
+                  </a>
+                </li>
+              </ul>
+            </li>
+
+            <!-- Pages -->
+            <li>
+              <button id="pagesBtn" class="w-full flex justify-between items-center py-3 border-b">
+                Pages
+                <i id="pagesIcon" class="fa-solid fa-chevron-down text-sm"></i>
+              </button>
+
+              <ul id="pagesMenu" class="hidden pl-4">
+                <li><a href="./aboutUs.html" class="block py-3">About US</a></li>
+                <li><a href="./team.html" class="block py-3">Team</a></li>
+                <li><a href="./pricing.html" class="block py-3">Pricing</a></li>
+                <li><a href="./testimonials.html" class="block py-3">Testimonials</a></li>
+                <li><a href="./faq.html" class="block py-3">Faq</a></li>
+                <li><a href="./404.html" class="block py-3">404 Page</a></li>
+                <li><a href="./mailSuccess.html" class="block py-3">Mail Success</a></li>
+              </ul>
+            </li>
+
+            <li>
+              <a href="./contact.html" class="block py-3 border-b">
+                Contact
+              </a>
+            </li>
+
+            <li class="pt-4">
+              <a href="#" class="block text-center py-3 px-4 bg-buttonColor text-white rounded">
+                Get a Quote
+              </a>
+            </li>
+
+          </ul>
+        </div>
+        <!-- mobile End -->
       </div>
     </div>
   </nav>
@@ -587,6 +698,23 @@
     </div>
   </footer>
   <!-- Footer End -->
+
+  <!-- mobile-menu-script -->
+  <script>
+    // Open Menu
+    menuIcon.addEventListener('click', () => {
+      mobileMenu.classList.remove('translate-x-full');
+      mobileMenu.classList.add('translate-x-0');
+    });
+
+
+    // Close Menu
+    closeMenu.addEventListener('click', () => {
+      mobileMenu.classList.remove('translate-x-0');
+      mobileMenu.classList.add('translate-x-full');
+    });
+  </script>
+
 </body>
 
 </html>
